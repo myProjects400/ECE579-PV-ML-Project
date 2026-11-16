@@ -99,4 +99,4 @@ Start Jupyter from inside `Code_base_v2` so the notebooks find the project folde
 
 ## AI assistance disclosure
 
-As permitted by the course policy, ChatGPT was used to help understand library APIs, debug code and improve the wording of the report. All experiments were run by the author, and all reported numbers come from those runs.
+As permitted by the course policy, ChatGPT was used to help understand library APIs, debug code and improve the wording of the report. Claude (Anthropic) was used to set up this GitHub repository (README, requirements file and results summary). All experiments were run by the author, and all reported numbers come from those runs.
