@@ -1,0 +1,12 @@
+\begin{table}[!htbp]\centering\scriptsize
+\caption{P3 implementation and major saved hyperparameters. $p$ denotes encoded input dimension and $d$ the compressed dimension. Three seeds were used for the autoencoder and downstream experiments.}\label{tab:p3impl}
+\begin{tabularx}{\linewidth}{@{}p{0.23\linewidth}p{0.19\linewidth}X@{}}\toprule
+\textbf{Method} & \textbf{Python library} & \textbf{Verified settings}\\\midrule
+PCA & \texttt{scikit-learn} & $d\in\{2,5,10\}$; fit to training inputs only.\\
+RBF kernel PCA (approx.) & \texttt{scikit-learn} & Nystr\"om feature approximation, 192 landmarks, RBF $\gamma=1/p$; ridge reconstruction decoder $\alpha=1$.\\
+Autoencoder & \texttt{PyTorch} & Encoder widths $p\to64\to32\to d$ and symmetric decoder; 35 epochs, batch size 1024, AdamW.\\
+UMAP (visualization) & \texttt{umap-learn} & $n_{\mathrm{neighbors}}=25$, $\mathrm{min\_dist}=0.1$, 150 epochs, up to 6000 training samples for fitting.\\
+t-SNE (visualization) & \texttt{scikit-learn} & Perplexity 30; 2500 training observations per plotted city/task.\\
+Downstream ML models & \texttt{scikit-learn}, \texttt{xgboost}, \texttt{PyTorch} & Logistic max iterations 1500; RBF SVM $C=3$; random forest 160 trees; XGBoost 200 trees and depth 4; MLP hidden widths 64, 32.\\
+\bottomrule\end{tabularx}
+\end{table}

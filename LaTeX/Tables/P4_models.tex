@@ -1,0 +1,18 @@
+\begin{table}[!htbp]\centering\footnotesize
+\setlength{\tabcolsep}{5pt}
+\caption{P4 model and method inventory, separating classical machine learning and deep learning.}\label{tab:p4methods}
+\begin{tabular}{@{}p{0.19\linewidth}p{0.37\linewidth}p{0.34\linewidth}@{}}\toprule
+\textbf{Family / stage} & \textbf{Models or strategies} & \textbf{Purpose}\\\midrule
+\rowcolor{gold!10}
+Classical ML & Logistic regression, RBF SVM & Supervised and pseudo-labeled fits\\
+\rowcolor{gold!10}
+Classical ML & Random forest, XGBoost & Supervised and pseudo-labeled fits\\
+\rowcolor{teal!9}
+Deep learning & PyTorch MLP & Neural classification\\
+\rowcolor{teal!9}
+Deep representation & Autoencoder SSL & Unsupervised feature learning\\
+\rowcolor{mist}
+SSL strategies & One-shot, iterative self-training & Compare with supervised-only baselines\\
+\bottomrule\end{tabular}
+\end{table}
+

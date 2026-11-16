@@ -1,0 +1,200 @@
+\begin{table}[!htbp]\centering\scriptsize
+\setlength{\tabcolsep}{3pt}
+\caption{P3 Davis Sky: all five downstream models at $d=2,5,10$ using original and reduced features (mean $\pm$ SD of balanced accuracy in percent). Bold marks the best model within each representation and dimension; original-feature winner is highlighted.}\label{tab:p3davissky}
+\begin{tabular}{@{}r l rrrr@{}}\toprule
+\textbf{$d$} & \textbf{Downstream model} & \textbf{Original} & \textbf{PCA} & \textbf{Kernel PCA} & \textbf{Autoencoder}\\\midrule
+2 & Logistic regression & 98.44\,$\pm$\,0.00 & 66.92\,$\pm$\,0.00 & 53.15\,$\pm$\,0.00 & 66.20\,$\pm$\,5.94\\
+2 & RBF SVM & 97.52\,$\pm$\,0.00 & 67.54\,$\pm$\,0.00 & 61.42\,$\pm$\,0.00 & 77.54\,$\pm$\,3.34\\
+2 & Random forest & 98.63\,$\pm$\,0.10 & 64.16\,$\pm$\,0.12 & 54.31\,$\pm$\,0.12 & 76.00\,$\pm$\,1.91\\
+2 & XGBoost & \bestscore{99.17\,$\pm$\,0.01} & 66.72\,$\pm$\,0.06 & 59.58\,$\pm$\,0.06 & 73.56\,$\pm$\,2.85\\
+2 & MLP (PyTorch) & 97.26\,$\pm$\,0.12 & \bestscore{67.64\,$\pm$\,0.48} & \bestscore{61.85\,$\pm$\,0.14} & \bestscore{77.92\,$\pm$\,3.57}\\
+\addlinespace[2pt]\\
+5 & Logistic regression & 98.44\,$\pm$\,0.00 & 71.96\,$\pm$\,0.00 & 70.71\,$\pm$\,0.00 & 83.12\,$\pm$\,1.42\\
+5 & RBF SVM & 97.52\,$\pm$\,0.00 & \bestscore{78.79\,$\pm$\,0.00} & \bestscore{77.03\,$\pm$\,0.00} & \bestscore{84.13\,$\pm$\,1.25}\\
+5 & Random forest & 98.63\,$\pm$\,0.10 & 73.17\,$\pm$\,0.18 & 75.72\,$\pm$\,0.22 & 80.86\,$\pm$\,0.55\\
+5 & XGBoost & \bestscore{99.17\,$\pm$\,0.01} & 75.62\,$\pm$\,0.16 & 75.96\,$\pm$\,0.03 & 83.02\,$\pm$\,0.40\\
+5 & MLP (PyTorch) & 97.26\,$\pm$\,0.12 & 75.32\,$\pm$\,1.24 & 75.62\,$\pm$\,0.33 & 83.01\,$\pm$\,1.03\\
+\addlinespace[2pt]\\
+10 & Logistic regression & 98.44\,$\pm$\,0.00 & 80.40\,$\pm$\,0.00 & 80.36\,$\pm$\,0.00 & 83.28\,$\pm$\,0.64\\
+10 & RBF SVM & 97.52\,$\pm$\,0.00 & 78.91\,$\pm$\,0.00 & 81.83\,$\pm$\,0.00 & \bestscore{84.40\,$\pm$\,1.65}\\
+10 & Random forest & 98.63\,$\pm$\,0.10 & 80.51\,$\pm$\,0.28 & 81.86\,$\pm$\,0.44 & 81.64\,$\pm$\,2.06\\
+10 & XGBoost & \bestscore{99.17\,$\pm$\,0.01} & 81.09\,$\pm$\,0.24 & 81.23\,$\pm$\,0.14 & 82.69\,$\pm$\,1.23\\
+10 & MLP (PyTorch) & 97.26\,$\pm$\,0.12 & \bestscore{81.66\,$\pm$\,0.77} & \bestscore{81.99\,$\pm$\,0.10} & 84.08\,$\pm$\,2.30\\
+\bottomrule\end{tabular}
+\end{table}
+
+\begin{table}[!htbp]\centering\scriptsize
+\setlength{\tabcolsep}{3pt}
+\caption{P3 Davis Sky\_NoPower: all five downstream models at $d=2,5,10$ using original and reduced features (mean $\pm$ SD of balanced accuracy in percent). Bold marks the best model within each representation and dimension; original-feature winner is highlighted.}\label{tab:p3davissky_nopower}
+\begin{tabular}{@{}r l rrrr@{}}\toprule
+\textbf{$d$} & \textbf{Downstream model} & \textbf{Original} & \textbf{PCA} & \textbf{Kernel PCA} & \textbf{Autoencoder}\\\midrule
+2 & Logistic regression & 98.42\,$\pm$\,0.00 & 62.08\,$\pm$\,0.00 & 49.89\,$\pm$\,0.00 & 55.25\,$\pm$\,4.23\\
+2 & RBF SVM & 97.24\,$\pm$\,0.00 & 62.19\,$\pm$\,0.00 & 55.38\,$\pm$\,0.00 & 68.91\,$\pm$\,7.08\\
+2 & Random forest & 98.67\,$\pm$\,0.07 & 58.78\,$\pm$\,0.39 & 46.77\,$\pm$\,0.15 & 67.94\,$\pm$\,4.15\\
+2 & XGBoost & \bestscore{99.20\,$\pm$\,0.04} & \bestscore{63.41\,$\pm$\,0.21} & 55.68\,$\pm$\,0.35 & 65.94\,$\pm$\,3.80\\
+2 & MLP (PyTorch) & 98.09\,$\pm$\,0.16 & 63.37\,$\pm$\,0.09 & \bestscore{55.72\,$\pm$\,0.25} & \bestscore{69.46\,$\pm$\,6.05}\\
+\addlinespace[2pt]\\
+5 & Logistic regression & 98.42\,$\pm$\,0.00 & 67.62\,$\pm$\,0.00 & 66.94\,$\pm$\,0.00 & 66.66\,$\pm$\,8.04\\
+5 & RBF SVM & 97.24\,$\pm$\,0.00 & \bestscore{73.46\,$\pm$\,0.00} & 72.70\,$\pm$\,0.00 & 76.16\,$\pm$\,1.98\\
+5 & Random forest & 98.67\,$\pm$\,0.07 & 69.58\,$\pm$\,0.38 & 72.50\,$\pm$\,0.17 & 70.47\,$\pm$\,0.77\\
+5 & XGBoost & \bestscore{99.20\,$\pm$\,0.04} & 72.75\,$\pm$\,0.06 & \bestscore{72.73\,$\pm$\,0.31} & 73.74\,$\pm$\,0.79\\
+5 & MLP (PyTorch) & 98.09\,$\pm$\,0.16 & 71.89\,$\pm$\,0.66 & 72.56\,$\pm$\,1.11 & \bestscore{76.39\,$\pm$\,2.77}\\
+\addlinespace[2pt]\\
+10 & Logistic regression & 98.42\,$\pm$\,0.00 & 80.35\,$\pm$\,0.00 & 78.80\,$\pm$\,0.00 & 81.87\,$\pm$\,1.13\\
+10 & RBF SVM & 97.24\,$\pm$\,0.00 & 78.55\,$\pm$\,0.00 & \bestscore{81.90\,$\pm$\,0.00} & \bestscore{84.19\,$\pm$\,1.16}\\
+10 & Random forest & 98.67\,$\pm$\,0.07 & 79.28\,$\pm$\,0.48 & 79.92\,$\pm$\,0.37 & 79.22\,$\pm$\,1.54\\
+10 & XGBoost & \bestscore{99.20\,$\pm$\,0.04} & \bestscore{81.02\,$\pm$\,0.16} & 80.19\,$\pm$\,0.04 & 81.97\,$\pm$\,1.18\\
+10 & MLP (PyTorch) & 98.09\,$\pm$\,0.16 & 80.50\,$\pm$\,0.30 & 81.67\,$\pm$\,0.07 & 83.96\,$\pm$\,1.71\\
+\bottomrule\end{tabular}
+\end{table}
+
+\begin{table}[!htbp]\centering\scriptsize
+\setlength{\tabcolsep}{3pt}
+\caption{P3 Davis Generation: all five downstream models at $d=2,5,10$ using original and reduced features (mean $\pm$ SD of balanced accuracy in percent). Bold marks the best model within each representation and dimension; original-feature winner is highlighted.}\label{tab:p3davisgeneration}
+\begin{tabular}{@{}r l rrrr@{}}\toprule
+\textbf{$d$} & \textbf{Downstream model} & \textbf{Original} & \textbf{PCA} & \textbf{Kernel PCA} & \textbf{Autoencoder}\\\midrule
+2 & Logistic regression & 92.95\,$\pm$\,0.00 & 84.11\,$\pm$\,0.00 & 85.69\,$\pm$\,0.00 & 68.95\,$\pm$\,8.48\\
+2 & RBF SVM & 92.34\,$\pm$\,0.00 & 85.89\,$\pm$\,0.00 & 86.07\,$\pm$\,0.00 & 82.87\,$\pm$\,1.95\\
+2 & Random forest & \bestscore{94.50\,$\pm$\,0.01} & 84.64\,$\pm$\,0.09 & 83.02\,$\pm$\,0.08 & 83.82\,$\pm$\,1.81\\
+2 & XGBoost & 94.41\,$\pm$\,0.09 & 85.48\,$\pm$\,0.01 & \bestscore{86.40\,$\pm$\,0.05} & 80.59\,$\pm$\,4.19\\
+2 & MLP (PyTorch) & 93.89\,$\pm$\,0.17 & \bestscore{86.15\,$\pm$\,0.38} & 86.08\,$\pm$\,0.22 & \bestscore{83.99\,$\pm$\,1.11}\\
+\addlinespace[2pt]\\
+5 & Logistic regression & 92.95\,$\pm$\,0.00 & 87.33\,$\pm$\,0.00 & 88.19\,$\pm$\,0.00 & 82.37\,$\pm$\,1.13\\
+5 & RBF SVM & 92.34\,$\pm$\,0.00 & \bestscore{90.62\,$\pm$\,0.00} & 89.76\,$\pm$\,0.00 & \bestscore{90.43\,$\pm$\,0.71}\\
+5 & Random forest & \bestscore{94.50\,$\pm$\,0.01} & 89.52\,$\pm$\,0.03 & 89.03\,$\pm$\,0.15 & 88.96\,$\pm$\,0.65\\
+5 & XGBoost & 94.41\,$\pm$\,0.09 & 89.64\,$\pm$\,0.02 & 89.06\,$\pm$\,0.26 & 89.11\,$\pm$\,0.41\\
+5 & MLP (PyTorch) & 93.89\,$\pm$\,0.17 & 90.27\,$\pm$\,0.40 & \bestscore{90.39\,$\pm$\,0.23} & 90.18\,$\pm$\,0.38\\
+\addlinespace[2pt]\\
+10 & Logistic regression & 92.95\,$\pm$\,0.00 & 85.90\,$\pm$\,0.00 & 86.82\,$\pm$\,0.00 & 84.33\,$\pm$\,1.74\\
+10 & RBF SVM & 92.34\,$\pm$\,0.00 & 88.94\,$\pm$\,0.00 & 88.72\,$\pm$\,0.00 & 87.61\,$\pm$\,0.57\\
+10 & Random forest & \bestscore{94.50\,$\pm$\,0.01} & \bestscore{89.45\,$\pm$\,0.28} & \bestscore{88.78\,$\pm$\,0.08} & 86.07\,$\pm$\,0.31\\
+10 & XGBoost & 94.41\,$\pm$\,0.09 & 88.93\,$\pm$\,0.04 & 88.34\,$\pm$\,0.18 & 86.08\,$\pm$\,1.28\\
+10 & MLP (PyTorch) & 93.89\,$\pm$\,0.17 & 88.17\,$\pm$\,0.11 & 86.85\,$\pm$\,0.13 & \bestscore{88.77\,$\pm$\,1.22}\\
+\bottomrule\end{tabular}
+\end{table}
+
+\begin{table}[!htbp]\centering\scriptsize
+\setlength{\tabcolsep}{3pt}
+\caption{P3 Davis Regression: all five downstream models at $d=2,5,10$ using original and reduced features (mean $\pm$ SD of RMSE in kW). Bold marks the best model within each representation and dimension; original-feature winner is highlighted.}\label{tab:p3davisregression}
+\begin{tabular}{@{}r l rrrr@{}}\toprule
+\textbf{$d$} & \textbf{Downstream model} & \textbf{Original} & \textbf{PCA} & \textbf{Kernel PCA} & \textbf{Autoencoder}\\\midrule
+2 & Ridge & 16.93\,$\pm$\,0.00 & 27.75\,$\pm$\,0.00 & 33.43\,$\pm$\,0.00 & 37.91\,$\pm$\,5.33\\
+2 & RBF SVR & 17.36\,$\pm$\,0.00 & 25.81\,$\pm$\,0.00 & 31.58\,$\pm$\,0.00 & 26.94\,$\pm$\,3.68\\
+2 & Random forest & 15.22\,$\pm$\,0.02 & 26.01\,$\pm$\,0.03 & 30.82\,$\pm$\,0.07 & 25.60\,$\pm$\,1.90\\
+2 & XGBoost & 14.93\,$\pm$\,0.05 & 27.03\,$\pm$\,0.01 & 32.12\,$\pm$\,0.02 & 29.62\,$\pm$\,4.67\\
+2 & MLP (PyTorch) & \bestscore{14.93\,$\pm$\,0.10} & \bestscore{25.03\,$\pm$\,0.40} & \bestscore{29.18\,$\pm$\,0.42} & \bestscore{24.70\,$\pm$\,1.81}\\
+\addlinespace[2pt]\\
+5 & Ridge & 16.93\,$\pm$\,0.00 & 24.51\,$\pm$\,0.00 & 27.13\,$\pm$\,0.00 & 25.93\,$\pm$\,1.86\\
+5 & RBF SVR & 17.36\,$\pm$\,0.00 & 21.04\,$\pm$\,0.00 & 21.31\,$\pm$\,0.00 & 19.13\,$\pm$\,1.59\\
+5 & Random forest & 15.22\,$\pm$\,0.02 & 21.22\,$\pm$\,0.04 & 21.27\,$\pm$\,0.04 & 19.49\,$\pm$\,0.64\\
+5 & XGBoost & 14.93\,$\pm$\,0.05 & 20.89\,$\pm$\,0.04 & 20.83\,$\pm$\,0.05 & 19.70\,$\pm$\,0.72\\
+5 & MLP (PyTorch) & \bestscore{14.93\,$\pm$\,0.10} & \bestscore{20.79\,$\pm$\,0.23} & \bestscore{20.57\,$\pm$\,0.15} & \bestscore{19.01\,$\pm$\,1.11}\\
+\addlinespace[2pt]\\
+10 & Ridge & 16.93\,$\pm$\,0.00 & 24.09\,$\pm$\,0.00 & 26.63\,$\pm$\,0.00 & 22.44\,$\pm$\,1.49\\
+10 & RBF SVR & 17.36\,$\pm$\,0.00 & 27.98\,$\pm$\,0.00 & 24.32\,$\pm$\,0.00 & \bestscore{17.85\,$\pm$\,0.36}\\
+10 & Random forest & 15.22\,$\pm$\,0.02 & 20.09\,$\pm$\,0.03 & 20.68\,$\pm$\,0.06 & 20.35\,$\pm$\,0.58\\
+10 & XGBoost & 14.93\,$\pm$\,0.05 & 21.09\,$\pm$\,0.02 & 20.54\,$\pm$\,0.14 & 21.24\,$\pm$\,0.69\\
+10 & MLP (PyTorch) & \bestscore{14.93\,$\pm$\,0.10} & \bestscore{20.01\,$\pm$\,0.39} & \bestscore{20.36\,$\pm$\,0.29} & 17.86\,$\pm$\,0.53\\
+\bottomrule\end{tabular}
+\end{table}
+
+\begin{table}[!htbp]\centering\scriptsize
+\setlength{\tabcolsep}{3pt}
+\caption{P3 Amherst Sky: all five downstream models at $d=2,5,10$ using original and reduced features (mean $\pm$ SD of balanced accuracy in percent). Bold marks the best model within each representation and dimension; original-feature winner is highlighted.}\label{tab:p3amherstsky}
+\begin{tabular}{@{}r l rrrr@{}}\toprule
+\textbf{$d$} & \textbf{Downstream model} & \textbf{Original} & \textbf{PCA} & \textbf{Kernel PCA} & \textbf{Autoencoder}\\\midrule
+2 & Logistic regression & 98.51\,$\pm$\,0.00 & \bestscore{61.45\,$\pm$\,0.00} & \bestscore{67.57\,$\pm$\,0.00} & 68.34\,$\pm$\,7.45\\
+2 & RBF SVM & 96.36\,$\pm$\,0.00 & 60.27\,$\pm$\,0.00 & 65.99\,$\pm$\,0.00 & 70.44\,$\pm$\,4.45\\
+2 & Random forest & 98.33\,$\pm$\,0.02 & 55.20\,$\pm$\,0.48 & 59.80\,$\pm$\,0.52 & 69.88\,$\pm$\,4.79\\
+2 & XGBoost & \bestscore{98.98\,$\pm$\,0.01} & 59.17\,$\pm$\,0.04 & 64.37\,$\pm$\,0.09 & 68.67\,$\pm$\,6.97\\
+2 & MLP (PyTorch) & 97.77\,$\pm$\,0.55 & 59.49\,$\pm$\,0.14 & 66.90\,$\pm$\,0.44 & \bestscore{71.63\,$\pm$\,3.76}\\
+\addlinespace[2pt]\\
+5 & Logistic regression & 98.51\,$\pm$\,0.00 & 70.33\,$\pm$\,0.00 & 79.66\,$\pm$\,0.00 & 78.45\,$\pm$\,2.21\\
+5 & RBF SVM & 96.36\,$\pm$\,0.00 & \bestscore{76.42\,$\pm$\,0.00} & \bestscore{82.04\,$\pm$\,0.00} & \bestscore{85.09\,$\pm$\,1.08}\\
+5 & Random forest & 98.33\,$\pm$\,0.02 & 73.65\,$\pm$\,0.12 & 79.73\,$\pm$\,0.13 & 82.98\,$\pm$\,1.63\\
+5 & XGBoost & \bestscore{98.98\,$\pm$\,0.01} & 72.69\,$\pm$\,0.34 & 80.34\,$\pm$\,0.24 & 83.22\,$\pm$\,1.47\\
+5 & MLP (PyTorch) & 97.77\,$\pm$\,0.55 & 73.65\,$\pm$\,1.21 & 80.54\,$\pm$\,0.61 & 83.75\,$\pm$\,1.41\\
+\addlinespace[2pt]\\
+10 & Logistic regression & 98.51\,$\pm$\,0.00 & 86.64\,$\pm$\,0.00 & 84.03\,$\pm$\,0.00 & 81.95\,$\pm$\,1.97\\
+10 & RBF SVM & 96.36\,$\pm$\,0.00 & \bestscore{88.19\,$\pm$\,0.00} & 85.18\,$\pm$\,0.00 & \bestscore{84.23\,$\pm$\,2.64}\\
+10 & Random forest & 98.33\,$\pm$\,0.02 & 85.01\,$\pm$\,0.17 & 83.75\,$\pm$\,0.26 & 81.57\,$\pm$\,1.75\\
+10 & XGBoost & \bestscore{98.98\,$\pm$\,0.01} & 86.27\,$\pm$\,0.13 & 84.04\,$\pm$\,0.12 & 81.22\,$\pm$\,2.77\\
+10 & MLP (PyTorch) & 97.77\,$\pm$\,0.55 & 87.68\,$\pm$\,0.42 & \bestscore{85.31\,$\pm$\,0.40} & 82.35\,$\pm$\,3.37\\
+\bottomrule\end{tabular}
+\end{table}
+
+\begin{table}[!htbp]\centering\scriptsize
+\setlength{\tabcolsep}{3pt}
+\caption{P3 Amherst Sky\_NoPower: all five downstream models at $d=2,5,10$ using original and reduced features (mean $\pm$ SD of balanced accuracy in percent). Bold marks the best model within each representation and dimension; original-feature winner is highlighted.}\label{tab:p3amherstsky_nopower}
+\begin{tabular}{@{}r l rrrr@{}}\toprule
+\textbf{$d$} & \textbf{Downstream model} & \textbf{Original} & \textbf{PCA} & \textbf{Kernel PCA} & \textbf{Autoencoder}\\\midrule
+2 & Logistic regression & 98.67\,$\pm$\,0.00 & 51.66\,$\pm$\,0.00 & 59.36\,$\pm$\,0.00 & 46.85\,$\pm$\,4.27\\
+2 & RBF SVM & 96.25\,$\pm$\,0.00 & \bestscore{52.75\,$\pm$\,0.00} & \bestscore{59.89\,$\pm$\,0.00} & 62.21\,$\pm$\,4.86\\
+2 & Random forest & 98.38\,$\pm$\,0.02 & 47.36\,$\pm$\,0.58 & 53.53\,$\pm$\,0.46 & 61.04\,$\pm$\,3.24\\
+2 & XGBoost & \bestscore{98.96\,$\pm$\,0.04} & 51.14\,$\pm$\,0.05 & 58.68\,$\pm$\,0.34 & 58.26\,$\pm$\,3.34\\
+2 & MLP (PyTorch) & 97.85\,$\pm$\,0.25 & 51.87\,$\pm$\,0.44 & 59.48\,$\pm$\,0.22 & \bestscore{63.58\,$\pm$\,3.29}\\
+\addlinespace[2pt]\\
+5 & Logistic regression & 98.67\,$\pm$\,0.00 & 67.11\,$\pm$\,0.00 & 76.71\,$\pm$\,0.00 & 67.66\,$\pm$\,10.57\\
+5 & RBF SVM & 96.25\,$\pm$\,0.00 & \bestscore{75.38\,$\pm$\,0.00} & \bestscore{78.74\,$\pm$\,0.00} & \bestscore{80.69\,$\pm$\,1.45}\\
+5 & Random forest & 98.38\,$\pm$\,0.02 & 73.80\,$\pm$\,0.41 & 77.14\,$\pm$\,0.06 & 77.85\,$\pm$\,1.45\\
+5 & XGBoost & \bestscore{98.96\,$\pm$\,0.04} & 72.75\,$\pm$\,0.22 & 76.28\,$\pm$\,0.44 & 78.71\,$\pm$\,2.20\\
+5 & MLP (PyTorch) & 97.85\,$\pm$\,0.25 & 73.34\,$\pm$\,1.33 & 77.93\,$\pm$\,0.65 & 79.25\,$\pm$\,1.54\\
+\addlinespace[2pt]\\
+10 & Logistic regression & 98.67\,$\pm$\,0.00 & 86.23\,$\pm$\,0.00 & 81.75\,$\pm$\,0.00 & 81.02\,$\pm$\,2.60\\
+10 & RBF SVM & 96.25\,$\pm$\,0.00 & \bestscore{87.60\,$\pm$\,0.00} & \bestscore{86.23\,$\pm$\,0.00} & \bestscore{83.97\,$\pm$\,3.16}\\
+10 & Random forest & 98.38\,$\pm$\,0.02 & 84.63\,$\pm$\,0.37 & 83.39\,$\pm$\,0.32 & 81.09\,$\pm$\,1.61\\
+10 & XGBoost & \bestscore{98.96\,$\pm$\,0.04} & 85.86\,$\pm$\,0.34 & 83.68\,$\pm$\,0.11 & 81.52\,$\pm$\,3.75\\
+10 & MLP (PyTorch) & 97.85\,$\pm$\,0.25 & 87.20\,$\pm$\,0.20 & 85.34\,$\pm$\,0.35 & 82.96\,$\pm$\,4.63\\
+\bottomrule\end{tabular}
+\end{table}
+
+\begin{table}[!htbp]\centering\scriptsize
+\setlength{\tabcolsep}{3pt}
+\caption{P3 Amherst Generation: all five downstream models at $d=2,5,10$ using original and reduced features (mean $\pm$ SD of balanced accuracy in percent). Bold marks the best model within each representation and dimension; original-feature winner is highlighted.}\label{tab:p3amherstgeneration}
+\begin{tabular}{@{}r l rrrr@{}}\toprule
+\textbf{$d$} & \textbf{Downstream model} & \textbf{Original} & \textbf{PCA} & \textbf{Kernel PCA} & \textbf{Autoencoder}\\\midrule
+2 & Logistic regression & 74.33\,$\pm$\,0.00 & 66.42\,$\pm$\,0.00 & 69.30\,$\pm$\,0.00 & 55.99\,$\pm$\,3.96\\
+2 & RBF SVM & 73.69\,$\pm$\,0.00 & \bestscore{67.63\,$\pm$\,0.00} & \bestscore{69.71\,$\pm$\,0.00} & 66.08\,$\pm$\,3.35\\
+2 & Random forest & \bestscore{76.06\,$\pm$\,0.09} & 64.34\,$\pm$\,0.14 & 66.39\,$\pm$\,0.27 & 64.61\,$\pm$\,2.79\\
+2 & XGBoost & 75.85\,$\pm$\,0.22 & 66.45\,$\pm$\,0.15 & 69.39\,$\pm$\,0.17 & 64.71\,$\pm$\,2.82\\
+2 & MLP (PyTorch) & 74.48\,$\pm$\,0.79 & 66.87\,$\pm$\,0.18 & 69.67\,$\pm$\,0.36 & \bestscore{66.66\,$\pm$\,3.03}\\
+\addlinespace[2pt]\\
+5 & Logistic regression & 74.33\,$\pm$\,0.00 & 73.83\,$\pm$\,0.00 & 73.76\,$\pm$\,0.00 & 74.19\,$\pm$\,0.41\\
+5 & RBF SVM & 73.69\,$\pm$\,0.00 & \bestscore{75.01\,$\pm$\,0.00} & 74.79\,$\pm$\,0.00 & \bestscore{74.29\,$\pm$\,0.30}\\
+5 & Random forest & \bestscore{76.06\,$\pm$\,0.09} & 73.97\,$\pm$\,0.44 & 74.21\,$\pm$\,0.11 & 73.50\,$\pm$\,0.85\\
+5 & XGBoost & 75.85\,$\pm$\,0.22 & 74.50\,$\pm$\,0.32 & \bestscore{74.92\,$\pm$\,0.05} & 73.72\,$\pm$\,1.22\\
+5 & MLP (PyTorch) & 74.48\,$\pm$\,0.79 & 74.48\,$\pm$\,0.37 & 73.77\,$\pm$\,0.30 & 74.00\,$\pm$\,0.28\\
+\addlinespace[2pt]\\
+10 & Logistic regression & 74.33\,$\pm$\,0.00 & 73.91\,$\pm$\,0.00 & 74.20\,$\pm$\,0.00 & 74.62\,$\pm$\,0.56\\
+10 & RBF SVM & 73.69\,$\pm$\,0.00 & 73.21\,$\pm$\,0.00 & 74.68\,$\pm$\,0.00 & \bestscore{75.29\,$\pm$\,0.09}\\
+10 & Random forest & \bestscore{76.06\,$\pm$\,0.09} & 73.36\,$\pm$\,0.18 & \bestscore{75.56\,$\pm$\,0.03} & 73.68\,$\pm$\,1.01\\
+10 & XGBoost & 75.85\,$\pm$\,0.22 & \bestscore{74.41\,$\pm$\,0.36} & 75.14\,$\pm$\,0.37 & 73.97\,$\pm$\,1.26\\
+10 & MLP (PyTorch) & 74.48\,$\pm$\,0.79 & 73.84\,$\pm$\,0.27 & 75.06\,$\pm$\,0.24 & 74.63\,$\pm$\,0.65\\
+\bottomrule\end{tabular}
+\end{table}
+
+\begin{table}[!htbp]\centering\scriptsize
+\setlength{\tabcolsep}{3pt}
+\caption{P3 Amherst Regression: all five downstream models at $d=2,5,10$ using original and reduced features (mean $\pm$ SD of RMSE in kW). Bold marks the best model within each representation and dimension; original-feature winner is highlighted.}\label{tab:p3amherstregression}
+\begin{tabular}{@{}r l rrrr@{}}\toprule
+\textbf{$d$} & \textbf{Downstream model} & \textbf{Original} & \textbf{PCA} & \textbf{Kernel PCA} & \textbf{Autoencoder}\\\midrule
+2 & Ridge & 20.73\,$\pm$\,0.00 & 25.10\,$\pm$\,0.00 & 23.44\,$\pm$\,0.00 & 32.33\,$\pm$\,3.19\\
+2 & RBF SVR & 27.07\,$\pm$\,0.00 & 26.48\,$\pm$\,0.00 & 24.64\,$\pm$\,0.00 & 26.62\,$\pm$\,1.52\\
+2 & Random forest & 20.17\,$\pm$\,0.05 & 26.90\,$\pm$\,0.03 & 24.65\,$\pm$\,0.05 & 26.33\,$\pm$\,1.83\\
+2 & XGBoost & \bestscore{19.97\,$\pm$\,0.08} & 25.44\,$\pm$\,0.01 & 23.79\,$\pm$\,0.03 & 26.28\,$\pm$\,1.59\\
+2 & MLP (PyTorch) & 20.71\,$\pm$\,0.08 & \bestscore{24.96\,$\pm$\,0.07} & \bestscore{23.39\,$\pm$\,0.12} & \bestscore{25.39\,$\pm$\,1.85}\\
+\addlinespace[2pt]\\
+5 & Ridge & 20.73\,$\pm$\,0.00 & 21.52\,$\pm$\,0.00 & 21.86\,$\pm$\,0.00 & 22.03\,$\pm$\,0.22\\
+5 & RBF SVR & 27.07\,$\pm$\,0.00 & 21.32\,$\pm$\,0.00 & 21.81\,$\pm$\,0.00 & 21.32\,$\pm$\,0.53\\
+5 & Random forest & 20.17\,$\pm$\,0.05 & 21.46\,$\pm$\,0.02 & 21.52\,$\pm$\,0.06 & 21.07\,$\pm$\,0.08\\
+5 & XGBoost & \bestscore{19.97\,$\pm$\,0.08} & 20.83\,$\pm$\,0.06 & 21.34\,$\pm$\,0.04 & 20.77\,$\pm$\,0.19\\
+5 & MLP (PyTorch) & 20.71\,$\pm$\,0.08 & \bestscore{20.50\,$\pm$\,0.19} & \bestscore{20.74\,$\pm$\,0.09} & \bestscore{20.73\,$\pm$\,0.52}\\
+\addlinespace[2pt]\\
+10 & Ridge & 20.73\,$\pm$\,0.00 & 21.42\,$\pm$\,0.00 & 20.98\,$\pm$\,0.00 & 21.47\,$\pm$\,0.76\\
+10 & RBF SVR & 27.07\,$\pm$\,0.00 & 23.39\,$\pm$\,0.00 & 21.53\,$\pm$\,0.00 & 20.53\,$\pm$\,0.17\\
+10 & Random forest & 20.17\,$\pm$\,0.05 & 20.92\,$\pm$\,0.09 & 20.92\,$\pm$\,0.08 & 20.95\,$\pm$\,0.32\\
+10 & XGBoost & \bestscore{19.97\,$\pm$\,0.08} & 20.90\,$\pm$\,0.09 & 20.91\,$\pm$\,0.03 & 20.75\,$\pm$\,0.23\\
+10 & MLP (PyTorch) & 20.71\,$\pm$\,0.08 & \bestscore{20.69\,$\pm$\,0.16} & \bestscore{20.25\,$\pm$\,0.07} & \bestscore{20.45\,$\pm$\,0.22}\\
+\bottomrule\end{tabular}
+\end{table}
+

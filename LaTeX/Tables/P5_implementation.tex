@@ -1,0 +1,10 @@
+\begin{table}[!htbp]\centering\footnotesize
+\caption{P5 libraries and verified transfer protocol. Model-specific learning rates, regularization strengths, and optimizer schedules require checking against the executed P5 notebook.}\label{tab:p5impl}
+\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.21\linewidth}X@{}}\toprule
+\textbf{Model/strategy} & \textbf{Python library} & \textbf{Verified settings}\\\midrule
+Source/target classical models & \texttt{scikit-learn}, \texttt{xgboost} & Ridge, random forest, XGBoost; source Davis 2011--2016, target Amherst 2018--2020.\\
+Calibration and source--target pooling & NumPy / classical estimators & Affine prediction calibration and joint calibrated pooling on the $k$ labeled target examples.\\
+Neural transfer & \texttt{PyTorch}; \texttt{scikit-learn} ridge & MLP, frozen-encoder features, ridge prediction, and partial fine-tuning.\\
+Target-label budgets & Experiment protocol & $k\in\{10,50,100\}$ labels; three seeds, held-out Amherst test evaluation.\\
+\bottomrule\end{tabularx}
+\end{table}

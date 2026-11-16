@@ -1,0 +1,179 @@
+{
+  "description": "Headline held-out test results (mean over seeds 42, 123, 2026). Full per-seed metrics are in Code_base_v2/Results/.",
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "split": "chronological 80/20 per sheet",
+  "results": [
+    {
+      "Problem": "P1",
+      "Setting": "Same-city classification",
+      "City_or_Pair": "Davis",
+      "Task": "Sky condition",
+      "Best_Model": "XGBoost",
+      "Metric": "Balanced accuracy",
+      "Value": 99.15,
+      "Unit": "%",
+      "Reference": "Chance = 33.3%",
+      "Source_File": "Code_base_v2/Results/P1/classification_metrics.csv"
+    },
+    {
+      "Problem": "P1",
+      "Setting": "Same-city classification",
+      "City_or_Pair": "Amherst",
+      "Task": "Sky condition",
+      "Best_Model": "XGBoost",
+      "Metric": "Balanced accuracy",
+      "Value": 98.82,
+      "Unit": "%",
+      "Reference": "Chance = 33.3%",
+      "Source_File": "Code_base_v2/Results/P1/classification_metrics.csv"
+    },
+    {
+      "Problem": "P1",
+      "Setting": "Same-city classification",
+      "City_or_Pair": "Davis",
+      "Task": "Generation regime",
+      "Best_Model": "XGBoost",
+      "Metric": "Balanced accuracy",
+      "Value": 96.35,
+      "Unit": "%",
+      "Reference": "Chance = 33.3%",
+      "Source_File": "Code_base_v2/Results/P1/classification_metrics.csv"
+    },
+    {
+      "Problem": "P1",
+      "Setting": "Same-city classification",
+      "City_or_Pair": "Amherst",
+      "Task": "Generation regime",
+      "Best_Model": "Random Forest",
+      "Metric": "Balanced accuracy",
+      "Value": 75.9,
+      "Unit": "%",
+      "Reference": "Medium-class recall 60.8%",
+      "Source_File": "Code_base_v2/Results/P1/classification_metrics.csv"
+    },
+    {
+      "Problem": "P2",
+      "Setting": "Same-city regression",
+      "City_or_Pair": "Davis",
+      "Task": "Output Power",
+      "Best_Model": "XGBoost / MLP (tie)",
+      "Metric": "RMSE",
+      "Value": 11.85,
+      "Unit": "kW",
+      "Reference": "nRMSE 4.72%; Ridge 13.82 kW",
+      "Source_File": "Code_base_v2/Results/P2/same_city_metrics.csv"
+    },
+    {
+      "Problem": "P2",
+      "Setting": "Same-city regression",
+      "City_or_Pair": "Amherst",
+      "Task": "Output Power",
+      "Best_Model": "MLP (PyTorch)",
+      "Metric": "RMSE",
+      "Value": 19.96,
+      "Unit": "kW",
+      "Reference": "nRMSE 15.69%; Ridge 20.72 kW",
+      "Source_File": "Code_base_v2/Results/P2/same_city_metrics.csv"
+    },
+    {
+      "Problem": "P2",
+      "Setting": "Sequential K=12",
+      "City_or_Pair": "Davis",
+      "Task": "Output Power",
+      "Best_Model": "Random Forest",
+      "Metric": "RMSE",
+      "Value": 13.3,
+      "Unit": "kW",
+      "Reference": "nRMSE 5.29%; LSTM 14.64 kW",
+      "Source_File": "Code_base_v2/Results/P2/sequential_metrics.csv"
+    },
+    {
+      "Problem": "P2",
+      "Setting": "Sequential K=12",
+      "City_or_Pair": "Amherst",
+      "Task": "Output Power",
+      "Best_Model": "Random Forest",
+      "Metric": "RMSE",
+      "Value": 15.96,
+      "Unit": "kW",
+      "Reference": "nRMSE 12.54%; LSTM 16.55 kW",
+      "Source_File": "Code_base_v2/Results/P2/sequential_metrics.csv"
+    },
+    {
+      "Problem": "P2",
+      "Setting": "Cross-city zero-shot",
+      "City_or_Pair": "Davis->Huron",
+      "Task": "Output Power",
+      "Best_Model": "RBF SVR",
+      "Metric": "RMSE",
+      "Value": 114.61,
+      "Unit": "kW",
+      "Reference": ">100% nRMSE",
+      "Source_File": "Code_base_v2/Results/P2/cross_city_metrics.csv"
+    },
+    {
+      "Problem": "P2",
+      "Setting": "Cross-city zero-shot",
+      "City_or_Pair": "Davis->Santa Barbara",
+      "Task": "Output Power",
+      "Best_Model": "RBF SVR",
+      "Metric": "RMSE",
+      "Value": 102.96,
+      "Unit": "kW",
+      "Reference": ">100% nRMSE",
+      "Source_File": "Code_base_v2/Results/P2/cross_city_metrics.csv"
+    },
+    {
+      "Problem": "P2",
+      "Setting": "Cross-city zero-shot",
+      "City_or_Pair": "Davis->La Jolla",
+      "Task": "Output Power",
+      "Best_Model": "RBF SVR",
+      "Metric": "RMSE",
+      "Value": 77.27,
+      "Unit": "kW",
+      "Reference": ">100% nRMSE",
+      "Source_File": "Code_base_v2/Results/P2/cross_city_metrics.csv"
+    },
+    {
+      "Problem": "P3",
+      "Setting": "Reduce-then-predict (closest to raw)",
+      "City_or_Pair": "Amherst",
+      "Task": "Generation regime",
+      "Best_Model": "KPCA d=10",
+      "Metric": "Balanced accuracy",
+      "Value": 75.56,
+      "Unit": "%",
+      "Reference": "Raw features 76.06%; raw wins all 8 cases",
+      "Source_File": "Code_base_v2/Results/P3/P3_All_Methods_Downstream_Comparison.csv"
+    },
+    {
+      "Problem": "P4",
+      "Setting": "Semi-supervised, 10% labels",
+      "City_or_Pair": "Davis/Amherst",
+      "Task": "Sky / Generation",
+      "Best_Model": "Best SSL vs best supervised",
+      "Metric": "Balanced-accuracy gain",
+      "Value": "+0.08 to +0.16",
+      "Unit": "pp",
+      "Reference": "3 of 4 tasks; largest matched gain +5.59 pp (MLP)",
+      "Source_File": "Code_base_v2/Results/P4/P4_Matched_SSL_Gains_Summary.csv"
+    },
+    {
+      "Problem": "P5",
+      "Setting": "Transfer, k=10 target labels",
+      "City_or_Pair": "Davis->Amherst",
+      "Task": "Output Power",
+      "Best_Model": "Joint calibrated pooling (Ridge)",
+      "Metric": "RMSE",
+      "Value": 23.22,
+      "Unit": "kW",
+      "Reference": "Zero-shot 75.82 kW; target-only 26.19 kW",
+      "Source_File": "Code_base_v2/Results/P5/P5_All_Methods_Summary.csv"
+    }
+  ]
+}

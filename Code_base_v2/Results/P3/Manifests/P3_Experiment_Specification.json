@@ -1,0 +1,150 @@
+{
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "dimensions": [
+    2,
+    5,
+    10
+  ],
+  "reduction_methods": [
+    "PCA",
+    "Kernel PCA",
+    "Autoencoder",
+    "UMAP"
+  ],
+  "features": {
+    "Sky": [
+      "Year",
+      "Month",
+      "Day",
+      "Hour",
+      "Minute",
+      "DHI",
+      "DNI",
+      "Clearsky DHI",
+      "Clearsky DNI",
+      "Dew Point",
+      "Solar Zenith Angle",
+      "Surface Albedo",
+      "Wind Speed",
+      "Precipitable Water",
+      "Wind Direction",
+      "Relative Humidity",
+      "Temperature",
+      "Pressure",
+      "Hour_Sin",
+      "Hour_Cos",
+      "DayOfYear_Sin",
+      "DayOfYear_Cos",
+      "Cloud Type",
+      "Output Power"
+    ],
+    "Sky_NoPower": [
+      "Year",
+      "Month",
+      "Day",
+      "Hour",
+      "Minute",
+      "DHI",
+      "DNI",
+      "Clearsky DHI",
+      "Clearsky DNI",
+      "Dew Point",
+      "Solar Zenith Angle",
+      "Surface Albedo",
+      "Wind Speed",
+      "Precipitable Water",
+      "Wind Direction",
+      "Relative Humidity",
+      "Temperature",
+      "Pressure",
+      "Hour_Sin",
+      "Hour_Cos",
+      "DayOfYear_Sin",
+      "DayOfYear_Cos",
+      "Cloud Type"
+    ],
+    "Generation": [
+      "Year",
+      "Month",
+      "Day",
+      "Hour",
+      "Minute",
+      "DHI",
+      "DNI",
+      "GHI",
+      "Clearsky DHI",
+      "Clearsky DNI",
+      "Clearsky GHI",
+      "Dew Point",
+      "Solar Zenith Angle",
+      "Surface Albedo",
+      "Wind Speed",
+      "Precipitable Water",
+      "Wind Direction",
+      "Relative Humidity",
+      "Temperature",
+      "Pressure",
+      "Hour_Sin",
+      "Hour_Cos",
+      "DayOfYear_Sin",
+      "DayOfYear_Cos",
+      "Cloud Type"
+    ],
+    "Regression": [
+      "Year",
+      "Month",
+      "Day",
+      "Hour",
+      "Minute",
+      "DHI",
+      "DNI",
+      "GHI",
+      "Clearsky DHI",
+      "Clearsky DNI",
+      "Clearsky GHI",
+      "Dew Point",
+      "Solar Zenith Angle",
+      "Surface Albedo",
+      "Wind Speed",
+      "Precipitable Water",
+      "Wind Direction",
+      "Relative Humidity",
+      "Temperature",
+      "Pressure",
+      "Hour_Sin",
+      "Hour_Cos",
+      "DayOfYear_Sin",
+      "DayOfYear_Cos",
+      "Cloud Type"
+    ]
+  },
+  "class_names": {
+    "Sky": [
+      "Overcast",
+      "Partly Cloudy",
+      "Clear"
+    ],
+    "Sky_NoPower": [
+      "Overcast",
+      "Partly Cloudy",
+      "Clear"
+    ],
+    "Generation": [
+      "Low",
+      "Medium",
+      "High"
+    ]
+  },
+  "sky_thresholds": [
+    0.4,
+    0.85
+  ],
+  "generation_threshold_rule": "Per-dataset chronological training-set terciles",
+  "chronological_split": "Existing 80/20 manifests",
+  "preprocessing_fit_scope": "Training only",
+  "test_set_model_selection": false
+}

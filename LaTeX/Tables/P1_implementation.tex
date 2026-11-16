@@ -1,0 +1,10 @@
+\begin{table}[!htbp]\centering\footnotesize
+\caption{P1 implementation families and verifiable configuration. Exact $C$, tree depth, tree count, and neural training hyperparameters are not recorded in the exported P1 metrics and require checking against the executed notebook.}\label{tab:p1impl}
+\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.19\linewidth}X@{}}\toprule
+\textbf{Model} & \textbf{Python library} & \textbf{Verified setup}\\\midrule
+Logistic regression; SVM (RBF) & \texttt{scikit-learn} & Three-class classification; RBF kernel for SVM.\\
+Random forest & \texttt{scikit-learn} & Tree-ensemble classifier; three evaluation seeds.\\
+XGBoost & \texttt{xgboost} & Boosted-tree classifier; three evaluation seeds.\\
+MLP (neural) & \texttt{PyTorch} & Feed-forward classifier; three evaluation seeds.\\
+\bottomrule\end{tabularx}
+\end{table}

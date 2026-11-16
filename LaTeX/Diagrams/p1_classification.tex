@@ -1,0 +1,12 @@
+\begin{tikzpicture}[x=1cm,y=1cm]
+\node[flowdark,minimum width=6.8cm] (data) at (0,0) {Training features and training labels (Davis / Amherst)};
+\node[flow,minimum width=5.6cm,minimum height=1.25cm] (sky) at (-3.6,-1.75) {\textbf{Sky-condition target}\\$k=\mathrm{GHI}/\mathrm{Clearsky\,GHI}$\\Overcast / Partly cloudy / Clear};
+\node[flow,minimum width=5.6cm,minimum height=1.25cm] (gen) at (3.6,-1.75) {\textbf{Generation-regime target}\\Training-set power terciles\\Low / Medium / High};
+\node[flowgold,minimum width=6.8cm,minimum height=1.1cm] (feats) at (0,-3.65) {\textbf{Task-specific feature exclusion}\\Sky predictors: exclude GHI and clear-sky GHI;\\generation predictors: exclude Output Power};
+\node[flow,minimum width=7.8cm] (models) at (0,-5.05) {\textbf{Numerical scaling + cloud-type one-hot encoding}\\Logistic regression | RBF SVM | Random forest | XGBoost | MLP};
+\node[flowdark,minimum width=7.8cm] (eval) at (0,-6.38) {Held-out predictions: Balanced accuracy, Macro-F1, confusion matrices};
+\draw[conn](data.south)--(0,-0.73)--(-3.6,-0.73);\draw[conn](0,-0.73)--(3.6,-0.73);
+\draw[arr](-3.6,-0.73)--(sky.north);\draw[arr](3.6,-0.73)--(gen.north);
+\draw[conn](sky.south)--(-3.6,-2.68)--(3.6,-2.68)--(gen.south);
+\draw[arr](0,-2.68)--(feats.north);\draw[arr](feats)--(models);\draw[arr](models)--(eval);
+\end{tikzpicture}

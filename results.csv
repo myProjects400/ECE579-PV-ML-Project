@@ -1,0 +1,15 @@
+Problem,Setting,City_or_Pair,Task,Best_Model,Metric,Value,Unit,Reference,Source_File
+P1,Same-city classification,Davis,Sky condition,XGBoost,Balanced accuracy,99.15,%,Chance = 33.3%,Code_base_v2/Results/P1/classification_metrics.csv
+P1,Same-city classification,Amherst,Sky condition,XGBoost,Balanced accuracy,98.82,%,Chance = 33.3%,Code_base_v2/Results/P1/classification_metrics.csv
+P1,Same-city classification,Davis,Generation regime,XGBoost,Balanced accuracy,96.35,%,Chance = 33.3%,Code_base_v2/Results/P1/classification_metrics.csv
+P1,Same-city classification,Amherst,Generation regime,Random Forest,Balanced accuracy,75.9,%,Medium-class recall 60.8%,Code_base_v2/Results/P1/classification_metrics.csv
+P2,Same-city regression,Davis,Output Power,XGBoost / MLP (tie),RMSE,11.85,kW,nRMSE 4.72%; Ridge 13.82 kW,Code_base_v2/Results/P2/same_city_metrics.csv
+P2,Same-city regression,Amherst,Output Power,MLP (PyTorch),RMSE,19.96,kW,nRMSE 15.69%; Ridge 20.72 kW,Code_base_v2/Results/P2/same_city_metrics.csv
+P2,Sequential K=12,Davis,Output Power,Random Forest,RMSE,13.3,kW,nRMSE 5.29%; LSTM 14.64 kW,Code_base_v2/Results/P2/sequential_metrics.csv
+P2,Sequential K=12,Amherst,Output Power,Random Forest,RMSE,15.96,kW,nRMSE 12.54%; LSTM 16.55 kW,Code_base_v2/Results/P2/sequential_metrics.csv
+P2,Cross-city zero-shot,Davis->Huron,Output Power,RBF SVR,RMSE,114.61,kW,>100% nRMSE,Code_base_v2/Results/P2/cross_city_metrics.csv
+P2,Cross-city zero-shot,Davis->Santa Barbara,Output Power,RBF SVR,RMSE,102.96,kW,>100% nRMSE,Code_base_v2/Results/P2/cross_city_metrics.csv
+P2,Cross-city zero-shot,Davis->La Jolla,Output Power,RBF SVR,RMSE,77.27,kW,>100% nRMSE,Code_base_v2/Results/P2/cross_city_metrics.csv
+P3,Reduce-then-predict (closest to raw),Amherst,Generation regime,KPCA d=10,Balanced accuracy,75.56,%,Raw features 76.06%; raw wins all 8 cases,Code_base_v2/Results/P3/P3_All_Methods_Downstream_Comparison.csv
+P4,"Semi-supervised, 10% labels",Davis/Amherst,Sky / Generation,Best SSL vs best supervised,Balanced-accuracy gain,+0.08 to +0.16,pp,3 of 4 tasks; largest matched gain +5.59 pp (MLP),Code_base_v2/Results/P4/P4_Matched_SSL_Gains_Summary.csv
+P5,"Transfer, k=10 target labels",Davis->Amherst,Output Power,Joint calibrated pooling (Ridge),RMSE,23.22,kW,Zero-shot 75.82 kW; target-only 26.19 kW,Code_base_v2/Results/P5/P5_All_Methods_Summary.csv

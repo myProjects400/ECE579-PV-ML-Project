@@ -1,0 +1,49 @@
+% Figure 1: self-contained layout; uses report styles from main.tex.
+\begin{tikzpicture}[x=1cm,y=1cm]
+  % Shared input and preprocessing.
+  \node[flowdark, text width=7.3cm, minimum height=0.88cm] (data) at (0,0)
+    {\textbf{Nine city--year PV datasets}\\[2pt]
+     Irradiance, weather, time, and output power};
+  \node[flow, text width=7.3cm, minimum height=0.83cm] (split) at (0,-1.30)
+    {\textbf{Chronological train/test split}\\[2pt]
+     Fit preprocessing on training data only};
+  \draw[arr] (data.south) -- (split.north);
+
+  % Fixed text width AND equal box height prevent all overlaps.
+  \tikzset{projecttask/.style={flowgold, text width=2.22cm,
+    minimum width=2.54cm, minimum height=1.83cm,
+    inner sep=3pt, font=\scriptsize, align=center}}
+
+  \node[projecttask] (p1) at (-5.72,-3.50)
+    {\textbf{P1\\Classification}\\[4pt]Sky / generation\\classes};
+  \node[projecttask] (p2) at (-2.86,-3.50)
+    {\textbf{P2\\Regression}\\[4pt]Same/cross-city\\sequential};
+  \node[projecttask] (p3) at (0,-3.50)
+    {\textbf{P3\\Compression}\\[4pt]PCA / KPCA / AE};
+  \node[projecttask] (p4) at (2.86,-3.50)
+    {\textbf{P4\\Semi-supervised}\\[4pt]10 / 30 / 50\%\\labels};
+  \node[projecttask] (p5) at (5.72,-3.50)
+    {\textbf{P5\\Transfer}\\[4pt]Davis--Amherst\\few-shot transfer};
+
+  \coordinate (fork) at (0,-2.25);
+  \draw[conn] (split.south) -- (fork);
+  \draw[conn] (-5.72,-2.25) -- (5.72,-2.25);
+  \foreach \part in {p1,p2,p3,p4,p5} {
+    \draw[arr] (\part.north |- 0,-2.25) -- (\part.north);
+  }
+
+  \coordinate (merge) at (0,-4.74);
+  \draw[conn] (-5.72,-4.74) -- (5.72,-4.74);
+  \foreach \part in {p1,p2,p3,p4,p5} {
+    \draw[conn] (\part.south) -- (\part.south |- 0,-4.74);
+  }
+
+  \node[flow, text width=7.6cm, minimum height=0.82cm] (eval) at (0,-5.67)
+    {\textbf{Held-out test evaluation}\\[2pt]
+     Balanced accuracy, Macro-F1, RMSE, and MAE};
+  \node[flowdark, text width=7.6cm, minimum height=0.82cm] (report) at (0,-7.02)
+    {\textbf{Final project report}\\[2pt]
+     Tables, figures, comparisons, and discussion};
+  \draw[arr] (merge) -- (eval.north);
+  \draw[arr] (eval.south) -- (report.north);
+\end{tikzpicture}

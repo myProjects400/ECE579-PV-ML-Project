@@ -1,0 +1,15 @@
+\begin{tikzpicture}[x=1cm,y=1cm]
+\node[flowdark,minimum width=8cm] (features) at (0,0) {Preprocessed training predictors, without target labels};
+\node[flow,minimum width=3.5cm,minimum height=1.15cm] (pca) at (-4.5,-1.75) {\textbf{PCA}\\Linear projections};
+\node[flow,minimum width=3.5cm,minimum height=1.15cm] (kpca) at (0,-1.75) {\textbf{Kernel PCA}\\Nonlinear RBF / Nystr\"om};
+\node[flow,minimum width=3.5cm,minimum height=1.15cm] (ae) at (4.5,-1.75) {\textbf{Autoencoder}\\Learned bottleneck};
+\draw[conn](features.south)--(0,-0.85);\draw[conn](-4.5,-0.85)--(4.5,-0.85);
+\foreach \n in {pca,kpca,ae}{\draw[arr](\n.north |- 0,-0.85)--(\n.north);}
+\node[flowgold,minimum width=8cm] (dims) at (0,-3.55) {Compression dimension $d\in\{2,5,10\}$; transform train and held-out test};
+\draw[conn](-4.5,-2.51)--(-4.5,-2.75)--(4.5,-2.75)--(4.5,-2.51);
+\foreach \n in {pca,kpca,ae}{\draw[conn](\n.south)--(\n.south |- 0,-2.75);}
+\draw[arr](0,-2.75)--(dims.north);
+\node[flow,minimum width=8cm] (super) at (0,-4.85) {Train downstream classifiers / regressors on reduced features};
+\node[flowdark,minimum width=8cm] (eval) at (0,-6.13) {Compare with raw-feature baselines; BA, RMSE, reconstruction MSE};
+\draw[arr](dims)--(super);\draw[arr](super)--(eval);
+\end{tikzpicture}

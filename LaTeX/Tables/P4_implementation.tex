@@ -1,0 +1,9 @@
+\begin{table}[!htbp]\centering\footnotesize
+\caption{P4 implementation families and fixed label-budget settings. Pseudo-label confidence rules, iteration caps, and neural optimizer settings should be transcribed from the executed P4 notebook.}\label{tab:p4impl}
+\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.21\linewidth}X@{}}\toprule
+\textbf{Method/family} & \textbf{Python library} & \textbf{Verified settings}\\\midrule
+Classical classifiers & \texttt{scikit-learn}, \texttt{xgboost} & Logistic regression, RBF SVM, random forest, XGBoost.\\
+Supervised / pseudo-label / iterative SSL & Python/scikit-learn orchestration & Matched label budgets of $10\%$, $30\%$, and $50\%$; remaining training examples have labels withheld.\\
+Neural / autoencoder SSL & Neural implementation (confirm backend) & Autoencoder-based representation plus classifier; held-out test labels are never used for pseudo-label training.\\
+\bottomrule\end{tabularx}
+\end{table}

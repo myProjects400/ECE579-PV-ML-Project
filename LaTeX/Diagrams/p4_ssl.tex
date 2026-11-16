@@ -1,0 +1,14 @@
+\begin{tikzpicture}[x=1cm,y=1cm]
+\node[flowdark,minimum width=8.2cm] (data) at (0,0) {Classification training data: sky and generation tasks};
+\node[flowgold,minimum width=8.2cm] (budgets) at (0,-1.30) {Partition training labels: 10\%, 30\%, or 50\% revealed};
+\node[flow,minimum width=5.75cm,minimum height=1.35cm] (sup) at (-3.45,-3.18) {\textbf{Supervised-only baseline}\\Fit the model using revealed labels only};
+\node[flow,minimum width=5.75cm,minimum height=1.35cm] (ssl) at (3.45,-3.18) {\textbf{Semi-supervised methods}\\One-shot pseudo-labeling | Iterative self-training\\Autoencoder features + labeled learning};
+\draw[arr](data)--(budgets);
+\draw[conn](budgets.south)--(0,-2.18)--(-3.45,-2.18);\draw[conn](0,-2.18)--(3.45,-2.18);
+\draw[arr](-3.45,-2.18)--(sup.north);\draw[arr](3.45,-2.18)--(ssl.north);
+\node[flowdark,minimum width=8.5cm] (eval) at (0,-5.05) {Same held-out test set: Balanced accuracy and Macro-F1};
+\draw[conn](sup.south)--(-3.45,-4.22)--(3.45,-4.22)--(ssl.south);
+\draw[arr](0,-4.22)--(eval.north);
+\node[flowgold,minimum width=8.5cm] (gain) at (0,-6.37) {Label-efficiency curves and matched SSL-minus-supervised gains};
+\draw[arr](eval)--(gain);
+\end{tikzpicture}

@@ -1,0 +1,77 @@
+% Corrected Figure 2: training-only preprocessing protocol
+% Uses the TikZ styles already defined in main.tex.
+\begin{tikzpicture}[x=1cm,y=1cm]
+
+% Source records and split preparation
+\node[flowdark, text width=7.4cm, minimum height=0.72cm]
+  (raw) at (0,0)
+  {\textbf{Chronologically ordered PV measurements}};
+
+\node[flow, text width=7.4cm, minimum height=0.88cm]
+  (prepare) at (0,-1.24)
+  {\textbf{Initial preparation}\\[2pt]
+   Timestamp ordering, missing-value handling, candidate features};
+
+\node[flowgold, text width=7.4cm, minimum height=0.88cm]
+  (split) at (0,-2.59)
+  {\textbf{Chronological 80/20 split}\\[2pt]
+   Earlier observations: training \quad Later observations: test};
+
+\draw[arr] (raw.south) -- (prepare.north);
+\draw[arr] (prepare.south) -- (split.north);
+
+% Parallel training and test lanes
+\node[flow, text width=4.85cm, minimum height=1.12cm]
+  (train) at (-3.18,-4.37)
+  {\textbf{Training partition}\\[2pt]
+   Training inputs and labels};
+
+\node[flowsoft, text width=4.85cm, minimum height=1.12cm]
+  (test) at (3.18,-4.37)
+  {\textbf{Held-out test partition}\\[2pt]
+   Test labels reserved for evaluation};
+
+\coordinate (fork) at (0,-3.33);
+\draw[conn] (split.south) -- (fork);
+\draw[conn] (-3.18,-3.33) -- (3.18,-3.33);
+\draw[arr] (-3.18,-3.33) -- (train.north);
+\draw[arr] (3.18,-3.33) -- (test.north);
+
+% Separately distinguish fitting from application
+\node[flowgold, text width=4.85cm, minimum height=1.30cm]
+  (fit) at (-3.18,-6.19)
+  {\textbf{Fit on training data only}\\[2pt]
+   Numeric scaler, cloud-type encoder,\\
+   and task-specific thresholds};
+
+\node[flow, text width=4.85cm, minimum height=1.30cm]
+  (apply) at (3.18,-6.19)
+  {\textbf{Transform test inputs}\\[2pt]
+   Reuse learned train parameters;\\
+   no fitting on test observations};
+
+\draw[arr] (train.south) -- (fit.north);
+\draw[arr] (test.south) -- (apply.north);
+
+% Parameter transfer: no label exchange between the partitions.
+\draw[-{Latex[length=2.3mm]},line width=1.1pt,draw=teal,dashed]
+  (fit.east) -- (apply.west);
+
+% Both branches produce transformed features
+\node[flowdark, text width=4.85cm, minimum height=0.75cm]
+  (ztrain) at (-3.18,-7.88)
+  {\textbf{Transformed training features}};
+
+\node[flowdark, text width=4.85cm, minimum height=0.75cm]
+  (ztest) at (3.18,-7.88)
+  {\textbf{Transformed test features}};
+
+\draw[arr] (fit.south) -- (ztrain.north);
+\draw[arr] (apply.south) -- (ztest.north);
+
+% Legend is outside the flow boxes so it cannot cover their text.
+\node[font=\scriptsize, text=teal!85!black, align=center]
+  at (0,-8.70)
+  {\textbf{Dashed teal arrow:} training-fitted parameters are reused on test inputs.};
+
+\end{tikzpicture}

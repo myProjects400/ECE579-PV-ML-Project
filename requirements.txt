@@ -1,0 +1,13 @@
+# Versions recorded by the notebooks (Google Colab, Python 3.13.16, Tesla T4 GPU)
+scikit-learn==1.6.1
+xgboost==3.4.1
+torch==2.11.0
+# Versions of the packages below were not recorded by the notebooks
+numpy
+pandas
+matplotlib
+openpyxl
+joblib
+umap-learn
+ipython
+jupyter

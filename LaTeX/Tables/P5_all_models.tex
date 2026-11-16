@@ -1,0 +1,33 @@
+\begin{table}[!htbp]\centering\footnotesize
+\setlength{\tabcolsep}{5pt}
+\caption{P5 direct Davis-to-Amherst zero-shot performance for all four models (mean $\pm$ SD, kW).}\label{tab:p5zeroshot}
+\begin{tabular}{@{}lrr@{}}\toprule
+\textbf{Source model} & \textbf{Zero-shot RMSE} & \textbf{Zero-shot MAE}\\\midrule
+Ridge & \bestscore{75.82\,$\pm$\,0.00} & 61.24\,$\pm$\,0.00\\
+Random forest & 77.72\,$\pm$\,0.04 & 64.04\,$\pm$\,0.09\\
+XGBoost & 77.98\,$\pm$\,0.13 & 63.38\,$\pm$\,0.19\\
+MLP (PyTorch) & 83.24\,$\pm$\,7.84 & 69.16\,$\pm$\,5.10\\
+\bottomrule\end{tabular}
+\end{table}
+
+\begin{table}[!htbp]\centering\scriptsize
+\setlength{\tabcolsep}{3pt}
+\caption{P5 all evaluated target-only and transfer settings (held-out Amherst RMSE in kW, mean $\pm$ SD). Bold marks the best configuration at each label budget.}\label{tab:p5}
+\begin{tabular}{@{}l l rrr@{}}\toprule
+\textbf{Base model} & \textbf{Training / adaptation strategy} & \textbf{$k=10$} & \textbf{$k=50$} & \textbf{$k=100$}\\\midrule
+Ridge & Target-Only & 26.19\,$\pm$\,1.99 & \bestscore{22.03\,$\pm$\,0.53} & 22.09\,$\pm$\,0.63\\
+Ridge & Affine Calibration & 24.52\,$\pm$\,1.92 & 22.96\,$\pm$\,0.39 & 22.67\,$\pm$\,0.05\\
+Ridge & Joint Calibrated Pooling & \bestscore{23.22\,$\pm$\,0.66} & 22.03\,$\pm$\,0.58 & 21.81\,$\pm$\,0.47\\
+Random forest & Target-Only & 30.60\,$\pm$\,5.42 & 22.69\,$\pm$\,0.37 & 22.04\,$\pm$\,0.62\\
+Random forest & Affine Calibration & 24.92\,$\pm$\,2.17 & 22.92\,$\pm$\,0.42 & 22.91\,$\pm$\,0.15\\
+Random forest & Joint Calibrated Pooling & 25.12\,$\pm$\,2.44 & 22.29\,$\pm$\,0.71 & \bestscore{21.80\,$\pm$\,0.42}\\
+XGBoost & Target-Only & 31.15\,$\pm$\,4.79 & 24.90\,$\pm$\,1.12 & 23.07\,$\pm$\,0.46\\
+XGBoost & Affine Calibration & 24.30\,$\pm$\,1.62 & 22.68\,$\pm$\,0.32 & 22.60\,$\pm$\,0.09\\
+XGBoost & Joint Calibrated Pooling & 24.87\,$\pm$\,2.26 & 22.60\,$\pm$\,0.30 & 22.29\,$\pm$\,0.53\\
+MLP (PyTorch) & Target-Only & 29.31\,$\pm$\,2.97 & 23.94\,$\pm$\,0.67 & 24.24\,$\pm$\,0.35\\
+MLP (PyTorch) & Affine Calibration & 26.91\,$\pm$\,5.39 & 26.80\,$\pm$\,7.22 & 25.44\,$\pm$\,4.92\\
+MLP (PyTorch) & Frozen Encoder + Ridge & 27.12\,$\pm$\,2.44 & 25.64\,$\pm$\,0.65 & 24.20\,$\pm$\,0.42\\
+MLP (PyTorch) & Partial Fine-Tuning & 24.33\,$\pm$\,2.13 & 23.03\,$\pm$\,1.63 & 22.21\,$\pm$\,0.23\\
+\bottomrule\end{tabular}
+\end{table}
+

@@ -1,0 +1,11 @@
+\begin{table}[!htbp]\centering\footnotesize
+\caption{P2 regression libraries and protocol settings. Estimator-specific regularization, tree counts, and neural optimizer settings must be verified from the executed P2 notebook before submission.}\label{tab:p2impl}
+\begin{tabularx}{\linewidth}{@{}p{0.24\linewidth}p{0.19\linewidth}X@{}}\toprule
+\textbf{Model} & \textbf{Python library} & \textbf{Verified setup}\\\midrule
+Ridge; SVR (RBF) & \texttt{scikit-learn} & Regularized linear / RBF-kernel regression.\\
+Random forest & \texttt{scikit-learn} & Ensemble regression; three seeds.\\
+XGBoost & \texttt{xgboost} & Boosted-tree regression; three seeds.\\
+MLP & \texttt{PyTorch} & Feed-forward neural power regressor.\\
+LSTM & \texttt{PyTorch} & Sequence model; $12$ historical steps to predict the next output.\\
+\bottomrule\end{tabularx}
+\end{table}

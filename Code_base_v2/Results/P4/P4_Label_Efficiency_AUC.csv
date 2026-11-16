@@ -1,0 +1,481 @@
+City,Task,Model,Method,Seed,Metric,AUC_10_to_50,Normalized_AUC
+Amherst,Generation,Logistic Regression,Autoencoder SSL,42,Balanced Accuracy,0.2974881950087728,0.743720487521932
+Amherst,Generation,Logistic Regression,Autoencoder SSL,42,Macro-F1,0.29619687482132595,0.7404921870533149
+Amherst,Generation,Logistic Regression,Autoencoder SSL,123,Balanced Accuracy,0.29358131725573944,0.7339532931393485
+Amherst,Generation,Logistic Regression,Autoencoder SSL,123,Macro-F1,0.2945085479551747,0.7362713698879367
+Amherst,Generation,Logistic Regression,Autoencoder SSL,2026,Balanced Accuracy,0.297725516042622,0.744313790106555
+Amherst,Generation,Logistic Regression,Autoencoder SSL,2026,Macro-F1,0.295618367549885,0.7390459188747125
+Amherst,Generation,Logistic Regression,Iterative SSL,42,Balanced Accuracy,0.2944540537232301,0.7361351343080752
+Amherst,Generation,Logistic Regression,Iterative SSL,42,Macro-F1,0.29716722932484063,0.7429180733121016
+Amherst,Generation,Logistic Regression,Iterative SSL,123,Balanced Accuracy,0.28864785328259523,0.721619633206488
+Amherst,Generation,Logistic Regression,Iterative SSL,123,Macro-F1,0.2923529153433982,0.7308822883584954
+Amherst,Generation,Logistic Regression,Iterative SSL,2026,Balanced Accuracy,0.2946497453835645,0.7366243634589111
+Amherst,Generation,Logistic Regression,Iterative SSL,2026,Macro-F1,0.2966877318792351,0.7417193296980876
+Amherst,Generation,Logistic Regression,One-shot SSL,42,Balanced Accuracy,0.2912829762017828,0.728207440504457
+Amherst,Generation,Logistic Regression,One-shot SSL,42,Macro-F1,0.2953378673732289,0.7383446684330722
+Amherst,Generation,Logistic Regression,One-shot SSL,123,Balanced Accuracy,0.28625525284675657,0.7156381321168914
+Amherst,Generation,Logistic Regression,One-shot SSL,123,Macro-F1,0.29095362774610456,0.7273840693652613
+Amherst,Generation,Logistic Regression,One-shot SSL,2026,Balanced Accuracy,0.29058236530539294,0.7264559132634824
+Amherst,Generation,Logistic Regression,One-shot SSL,2026,Macro-F1,0.2940403838894483,0.7351009597236208
+Amherst,Generation,Logistic Regression,Supervised,42,Balanced Accuracy,0.2979623704166414,0.7449059260416035
+Amherst,Generation,Logistic Regression,Supervised,42,Macro-F1,0.29752922678944665,0.7438230669736166
+Amherst,Generation,Logistic Regression,Supervised,123,Balanced Accuracy,0.29377142942899476,0.7344285735724868
+Amherst,Generation,Logistic Regression,Supervised,123,Macro-F1,0.2952593387499738,0.7381483468749345
+Amherst,Generation,Logistic Regression,Supervised,2026,Balanced Accuracy,0.2977263583520063,0.7443158958800157
+Amherst,Generation,Logistic Regression,Supervised,2026,Macro-F1,0.29592221495730175,0.7398055373932544
+Amherst,Generation,MLP (PyTorch),Autoencoder SSL,42,Balanced Accuracy,0.29801228570524574,0.7450307142631143
+Amherst,Generation,MLP (PyTorch),Autoencoder SSL,42,Macro-F1,0.29613823659564187,0.7403455914891046
+Amherst,Generation,MLP (PyTorch),Autoencoder SSL,123,Balanced Accuracy,0.2962908148730101,0.7407270371825253
+Amherst,Generation,MLP (PyTorch),Autoencoder SSL,123,Macro-F1,0.29760599923387615,0.7440149980846903
+Amherst,Generation,MLP (PyTorch),Autoencoder SSL,2026,Balanced Accuracy,0.2981063995502883,0.7452659988757206
+Amherst,Generation,MLP (PyTorch),Autoencoder SSL,2026,Macro-F1,0.2945040196641012,0.736260049160253
+Amherst,Generation,MLP (PyTorch),Iterative SSL,42,Balanced Accuracy,0.29432969030478273,0.7358242257619568
+Amherst,Generation,MLP (PyTorch),Iterative SSL,42,Macro-F1,0.29429982549117484,0.7357495637279371
+Amherst,Generation,MLP (PyTorch),Iterative SSL,123,Balanced Accuracy,0.2960671260109154,0.7401678150272885
+Amherst,Generation,MLP (PyTorch),Iterative SSL,123,Macro-F1,0.2989164137950323,0.7472910344875807
+Amherst,Generation,MLP (PyTorch),Iterative SSL,2026,Balanced Accuracy,0.2990747492770066,0.7476868731925165
+Amherst,Generation,MLP (PyTorch),Iterative SSL,2026,Macro-F1,0.2970631831294087,0.7426579578235217
+Amherst,Generation,MLP (PyTorch),One-shot SSL,42,Balanced Accuracy,0.29455092089443524,0.7363773022360881
+Amherst,Generation,MLP (PyTorch),One-shot SSL,42,Macro-F1,0.2944097704145273,0.7360244260363182
+Amherst,Generation,MLP (PyTorch),One-shot SSL,123,Balanced Accuracy,0.29802066979468456,0.7450516744867114
+Amherst,Generation,MLP (PyTorch),One-shot SSL,123,Macro-F1,0.29976721485340185,0.7494180371335046
+Amherst,Generation,MLP (PyTorch),One-shot SSL,2026,Balanced Accuracy,0.2993421096717518,0.7483552741793794
+Amherst,Generation,MLP (PyTorch),One-shot SSL,2026,Macro-F1,0.2975150920733135,0.7437877301832837
+Amherst,Generation,MLP (PyTorch),Supervised,42,Balanced Accuracy,0.29356608291840314,0.7339152072960078
+Amherst,Generation,MLP (PyTorch),Supervised,42,Macro-F1,0.2926710861496956,0.731677715374239
+Amherst,Generation,MLP (PyTorch),Supervised,123,Balanced Accuracy,0.2982241109268896,0.745560277317224
+Amherst,Generation,MLP (PyTorch),Supervised,123,Macro-F1,0.2997532379585518,0.7493830948963794
+Amherst,Generation,MLP (PyTorch),Supervised,2026,Balanced Accuracy,0.299962253820008,0.74990563455002
+Amherst,Generation,MLP (PyTorch),Supervised,2026,Macro-F1,0.2970323055603584,0.742580763900896
+Amherst,Generation,Random Forest,Autoencoder SSL,42,Balanced Accuracy,0.2984191527791653,0.7460478819479133
+Amherst,Generation,Random Forest,Autoencoder SSL,42,Macro-F1,0.29864798012341554,0.7466199503085388
+Amherst,Generation,Random Forest,Autoencoder SSL,123,Balanced Accuracy,0.30085568298599374,0.7521392074649843
+Amherst,Generation,Random Forest,Autoencoder SSL,123,Macro-F1,0.3010998361821722,0.7527495904554304
+Amherst,Generation,Random Forest,Autoencoder SSL,2026,Balanced Accuracy,0.30263164515919405,0.7565791128979851
+Amherst,Generation,Random Forest,Autoencoder SSL,2026,Macro-F1,0.3012004059162038,0.7530010147905094
+Amherst,Generation,Random Forest,Iterative SSL,42,Balanced Accuracy,0.30001266263372006,0.7500316565843002
+Amherst,Generation,Random Forest,Iterative SSL,42,Macro-F1,0.30016975483209096,0.7504243870802274
+Amherst,Generation,Random Forest,Iterative SSL,123,Balanced Accuracy,0.30024285634247083,0.7506071408561771
+Amherst,Generation,Random Forest,Iterative SSL,123,Macro-F1,0.30050866403659093,0.7512716600914773
+Amherst,Generation,Random Forest,Iterative SSL,2026,Balanced Accuracy,0.3006186140214201,0.7515465350535502
+Amherst,Generation,Random Forest,Iterative SSL,2026,Macro-F1,0.2989311680648591,0.7473279201621477
+Amherst,Generation,Random Forest,One-shot SSL,42,Balanced Accuracy,0.29946968889714826,0.7486742222428706
+Amherst,Generation,Random Forest,One-shot SSL,42,Macro-F1,0.29951969187083777,0.7487992296770943
+Amherst,Generation,Random Forest,One-shot SSL,123,Balanced Accuracy,0.29945054761871004,0.748626369046775
+Amherst,Generation,Random Forest,One-shot SSL,123,Macro-F1,0.29975971950834274,0.7493992987708568
+Amherst,Generation,Random Forest,One-shot SSL,2026,Balanced Accuracy,0.3004471289716149,0.7511178224290372
+Amherst,Generation,Random Forest,One-shot SSL,2026,Macro-F1,0.29882325377027463,0.7470581344256866
+Amherst,Generation,Random Forest,Supervised,42,Balanced Accuracy,0.29942890415470835,0.7485722603867708
+Amherst,Generation,Random Forest,Supervised,42,Macro-F1,0.2995550897667255,0.7488877244168137
+Amherst,Generation,Random Forest,Supervised,123,Balanced Accuracy,0.2992454749349523,0.7481136873373807
+Amherst,Generation,Random Forest,Supervised,123,Macro-F1,0.29970188636367373,0.7492547159091842
+Amherst,Generation,Random Forest,Supervised,2026,Balanced Accuracy,0.3004295223970602,0.7510738059926505
+Amherst,Generation,Random Forest,Supervised,2026,Macro-F1,0.29869973903959457,0.7467493475989864
+Amherst,Generation,SVM (RBF),Autoencoder SSL,42,Balanced Accuracy,0.2804844136127635,0.7012110340319087
+Amherst,Generation,SVM (RBF),Autoencoder SSL,42,Macro-F1,0.27903928375226683,0.6975982093806671
+Amherst,Generation,SVM (RBF),Autoencoder SSL,123,Balanced Accuracy,0.28553981921562377,0.7138495480390594
+Amherst,Generation,SVM (RBF),Autoencoder SSL,123,Macro-F1,0.2868602874320034,0.7171507185800086
+Amherst,Generation,SVM (RBF),Autoencoder SSL,2026,Balanced Accuracy,0.28673180188485803,0.716829504712145
+Amherst,Generation,SVM (RBF),Autoencoder SSL,2026,Macro-F1,0.2797428976636545,0.6993572441591362
+Amherst,Generation,SVM (RBF),Iterative SSL,42,Balanced Accuracy,0.28077697410265334,0.7019424352566334
+Amherst,Generation,SVM (RBF),Iterative SSL,42,Macro-F1,0.27916062400008096,0.6979015600002023
+Amherst,Generation,SVM (RBF),Iterative SSL,123,Balanced Accuracy,0.28552968112203164,0.7138242028050791
+Amherst,Generation,SVM (RBF),Iterative SSL,123,Macro-F1,0.2871532595184375,0.7178831487960937
+Amherst,Generation,SVM (RBF),Iterative SSL,2026,Balanced Accuracy,0.28522191654311857,0.7130547913577964
+Amherst,Generation,SVM (RBF),Iterative SSL,2026,Macro-F1,0.27886268630252087,0.6971567157563021
+Amherst,Generation,SVM (RBF),One-shot SSL,42,Balanced Accuracy,0.2804514276947051,0.7011285692367627
+Amherst,Generation,SVM (RBF),One-shot SSL,42,Macro-F1,0.2791929298915081,0.6979823247287703
+Amherst,Generation,SVM (RBF),One-shot SSL,123,Balanced Accuracy,0.28471325288430965,0.711783132210774
+Amherst,Generation,SVM (RBF),One-shot SSL,123,Macro-F1,0.2871851500365948,0.7179628750914869
+Amherst,Generation,SVM (RBF),One-shot SSL,2026,Balanced Accuracy,0.28602857955077415,0.7150714488769353
+Amherst,Generation,SVM (RBF),One-shot SSL,2026,Macro-F1,0.280534209292137,0.7013355232303425
+Amherst,Generation,SVM (RBF),Supervised,42,Balanced Accuracy,0.2805984310468006,0.7014960776170015
+Amherst,Generation,SVM (RBF),Supervised,42,Macro-F1,0.27864971124439997,0.6966242781109999
+Amherst,Generation,SVM (RBF),Supervised,123,Balanced Accuracy,0.28628927052416,0.7157231763103999
+Amherst,Generation,SVM (RBF),Supervised,123,Macro-F1,0.28745992324529945,0.7186498081132486
+Amherst,Generation,SVM (RBF),Supervised,2026,Balanced Accuracy,0.28607989508420373,0.7151997377105093
+Amherst,Generation,SVM (RBF),Supervised,2026,Macro-F1,0.27876499422554735,0.6969124855638683
+Amherst,Generation,XGBoost,Autoencoder SSL,42,Balanced Accuracy,0.29669139062948363,0.741728476573709
+Amherst,Generation,XGBoost,Autoencoder SSL,42,Macro-F1,0.29704761694331566,0.7426190423582891
+Amherst,Generation,XGBoost,Autoencoder SSL,123,Balanced Accuracy,0.3012440550738306,0.7531101376845765
+Amherst,Generation,XGBoost,Autoencoder SSL,123,Macro-F1,0.30137798227926343,0.7534449556981585
+Amherst,Generation,XGBoost,Autoencoder SSL,2026,Balanced Accuracy,0.2990697676584487,0.7476744191461218
+Amherst,Generation,XGBoost,Autoencoder SSL,2026,Macro-F1,0.29773876913512876,0.7443469228378219
+Amherst,Generation,XGBoost,Iterative SSL,42,Balanced Accuracy,0.2981713371727013,0.7454283429317532
+Amherst,Generation,XGBoost,Iterative SSL,42,Macro-F1,0.2985064855308374,0.7462662138270935
+Amherst,Generation,XGBoost,Iterative SSL,123,Balanced Accuracy,0.30075262831008365,0.7518815707752091
+Amherst,Generation,XGBoost,Iterative SSL,123,Macro-F1,0.3017477767947961,0.7543694419869902
+Amherst,Generation,XGBoost,Iterative SSL,2026,Balanced Accuracy,0.30032707872380715,0.7508176968095178
+Amherst,Generation,XGBoost,Iterative SSL,2026,Macro-F1,0.2994329196176081,0.7485822990440202
+Amherst,Generation,XGBoost,One-shot SSL,42,Balanced Accuracy,0.2993222797135192,0.748305699283798
+Amherst,Generation,XGBoost,One-shot SSL,42,Macro-F1,0.2993914723117953,0.7484786807794882
+Amherst,Generation,XGBoost,One-shot SSL,123,Balanced Accuracy,0.30004903543416483,0.750122588585412
+Amherst,Generation,XGBoost,One-shot SSL,123,Macro-F1,0.3008411355118586,0.7521028387796465
+Amherst,Generation,XGBoost,One-shot SSL,2026,Balanced Accuracy,0.2994645536490004,0.7486613841225009
+Amherst,Generation,XGBoost,One-shot SSL,2026,Macro-F1,0.2982610966954446,0.7456527417386114
+Amherst,Generation,XGBoost,Supervised,42,Balanced Accuracy,0.29736635878381423,0.7434158969595356
+Amherst,Generation,XGBoost,Supervised,42,Macro-F1,0.29764749781016997,0.7441187445254249
+Amherst,Generation,XGBoost,Supervised,123,Balanced Accuracy,0.3002825168559421,0.7507062921398552
+Amherst,Generation,XGBoost,Supervised,123,Macro-F1,0.3009777282899596,0.752444320724899
+Amherst,Generation,XGBoost,Supervised,2026,Balanced Accuracy,0.2989932648986743,0.7474831622466857
+Amherst,Generation,XGBoost,Supervised,2026,Macro-F1,0.29781469954160567,0.7445367488540141
+Amherst,Sky,Logistic Regression,Autoencoder SSL,42,Balanced Accuracy,0.39132524501199656,0.9783131125299913
+Amherst,Sky,Logistic Regression,Autoencoder SSL,42,Macro-F1,0.39089831908070105,0.9772457977017526
+Amherst,Sky,Logistic Regression,Autoencoder SSL,123,Balanced Accuracy,0.3881411841579291,0.9703529603948227
+Amherst,Sky,Logistic Regression,Autoencoder SSL,123,Macro-F1,0.38726626070983616,0.9681656517745904
+Amherst,Sky,Logistic Regression,Autoencoder SSL,2026,Balanced Accuracy,0.3885024648571984,0.971256162142996
+Amherst,Sky,Logistic Regression,Autoencoder SSL,2026,Macro-F1,0.3879021450788448,0.9697553626971119
+Amherst,Sky,Logistic Regression,Iterative SSL,42,Balanced Accuracy,0.39235420565434626,0.9808855141358656
+Amherst,Sky,Logistic Regression,Iterative SSL,42,Macro-F1,0.3919111031121659,0.9797777577804148
+Amherst,Sky,Logistic Regression,Iterative SSL,123,Balanced Accuracy,0.3900272150501022,0.9750680376252554
+Amherst,Sky,Logistic Regression,Iterative SSL,123,Macro-F1,0.3891221574500787,0.9728053936251968
+Amherst,Sky,Logistic Regression,Iterative SSL,2026,Balanced Accuracy,0.3887520772166485,0.9718801930416212
+Amherst,Sky,Logistic Regression,Iterative SSL,2026,Macro-F1,0.38810201224321583,0.9702550306080395
+Amherst,Sky,Logistic Regression,One-shot SSL,42,Balanced Accuracy,0.3918967314430376,0.979741828607594
+Amherst,Sky,Logistic Regression,One-shot SSL,42,Macro-F1,0.39139170710361515,0.9784792677590378
+Amherst,Sky,Logistic Regression,One-shot SSL,123,Balanced Accuracy,0.3893907407945084,0.973476851986271
+Amherst,Sky,Logistic Regression,One-shot SSL,123,Macro-F1,0.3884423794305371,0.9711059485763427
+Amherst,Sky,Logistic Regression,One-shot SSL,2026,Balanced Accuracy,0.38972495102986127,0.9743123775746532
+Amherst,Sky,Logistic Regression,One-shot SSL,2026,Macro-F1,0.388972320123471,0.9724308003086775
+Amherst,Sky,Logistic Regression,Supervised,42,Balanced Accuracy,0.3926217467008394,0.9815543667520984
+Amherst,Sky,Logistic Regression,Supervised,42,Macro-F1,0.3921581196571544,0.980395299142886
+Amherst,Sky,Logistic Regression,Supervised,123,Balanced Accuracy,0.38959836743719667,0.9739959185929916
+Amherst,Sky,Logistic Regression,Supervised,123,Macro-F1,0.3887294335605502,0.9718235839013754
+Amherst,Sky,Logistic Regression,Supervised,2026,Balanced Accuracy,0.388761685305967,0.9719042132649175
+Amherst,Sky,Logistic Regression,Supervised,2026,Macro-F1,0.38813656119972084,0.970341402999302
+Amherst,Sky,MLP (PyTorch),Autoencoder SSL,42,Balanced Accuracy,0.3870272443779289,0.9675681109448222
+Amherst,Sky,MLP (PyTorch),Autoencoder SSL,42,Macro-F1,0.3873209226168759,0.9683023065421897
+Amherst,Sky,MLP (PyTorch),Autoencoder SSL,123,Balanced Accuracy,0.3818877052178017,0.9547192630445042
+Amherst,Sky,MLP (PyTorch),Autoencoder SSL,123,Macro-F1,0.3811508042936701,0.9528770107341752
+Amherst,Sky,MLP (PyTorch),Autoencoder SSL,2026,Balanced Accuracy,0.38483039219222864,0.9620759804805715
+Amherst,Sky,MLP (PyTorch),Autoencoder SSL,2026,Macro-F1,0.38471024633224543,0.9617756158306136
+Amherst,Sky,MLP (PyTorch),Iterative SSL,42,Balanced Accuracy,0.38724775972063485,0.9681193993015871
+Amherst,Sky,MLP (PyTorch),Iterative SSL,42,Macro-F1,0.3876172841503692,0.969043210375923
+Amherst,Sky,MLP (PyTorch),Iterative SSL,123,Balanced Accuracy,0.3854839349497072,0.9637098373742679
+Amherst,Sky,MLP (PyTorch),Iterative SSL,123,Macro-F1,0.38532755563265453,0.9633188890816363
+Amherst,Sky,MLP (PyTorch),Iterative SSL,2026,Balanced Accuracy,0.38683710797127396,0.9670927699281848
+Amherst,Sky,MLP (PyTorch),Iterative SSL,2026,Macro-F1,0.38642668970562716,0.9660667242640678
+Amherst,Sky,MLP (PyTorch),One-shot SSL,42,Balanced Accuracy,0.3867960645575853,0.9669901613939632
+Amherst,Sky,MLP (PyTorch),One-shot SSL,42,Macro-F1,0.38714569414036815,0.9678642353509204
+Amherst,Sky,MLP (PyTorch),One-shot SSL,123,Balanced Accuracy,0.3870465746418119,0.9676164366045298
+Amherst,Sky,MLP (PyTorch),One-shot SSL,123,Macro-F1,0.3868209504996357,0.9670523762490892
+Amherst,Sky,MLP (PyTorch),One-shot SSL,2026,Balanced Accuracy,0.3853441884418448,0.963360471104612
+Amherst,Sky,MLP (PyTorch),One-shot SSL,2026,Macro-F1,0.38505796227232925,0.9626449056808231
+Amherst,Sky,MLP (PyTorch),Supervised,42,Balanced Accuracy,0.3871256676846355,0.9678141692115888
+Amherst,Sky,MLP (PyTorch),Supervised,42,Macro-F1,0.3875030035432808,0.968757508858202
+Amherst,Sky,MLP (PyTorch),Supervised,123,Balanced Accuracy,0.3853654742852149,0.9634136857130372
+Amherst,Sky,MLP (PyTorch),Supervised,123,Macro-F1,0.3851460467845933,0.9628651169614832
+Amherst,Sky,MLP (PyTorch),Supervised,2026,Balanced Accuracy,0.38171003724340713,0.9542750931085178
+Amherst,Sky,MLP (PyTorch),Supervised,2026,Macro-F1,0.3817466166252633,0.9543665415631583
+Amherst,Sky,Random Forest,Autoencoder SSL,42,Balanced Accuracy,0.39327239714804485,0.9831809928701121
+Amherst,Sky,Random Forest,Autoencoder SSL,42,Macro-F1,0.3927865896845436,0.981966474211359
+Amherst,Sky,Random Forest,Autoencoder SSL,123,Balanced Accuracy,0.3928906517845543,0.9822266294613857
+Amherst,Sky,Random Forest,Autoencoder SSL,123,Macro-F1,0.39221360808491146,0.9805340202122786
+Amherst,Sky,Random Forest,Autoencoder SSL,2026,Balanced Accuracy,0.39138574127988396,0.9784643531997098
+Amherst,Sky,Random Forest,Autoencoder SSL,2026,Macro-F1,0.3908995405811887,0.9772488514529717
+Amherst,Sky,Random Forest,Iterative SSL,42,Balanced Accuracy,0.3933011824099907,0.9832529560249766
+Amherst,Sky,Random Forest,Iterative SSL,42,Macro-F1,0.3928391925721585,0.9820979814303962
+Amherst,Sky,Random Forest,Iterative SSL,123,Balanced Accuracy,0.392892760455297,0.9822319011382424
+Amherst,Sky,Random Forest,Iterative SSL,123,Macro-F1,0.3920786592444086,0.9801966481110215
+Amherst,Sky,Random Forest,Iterative SSL,2026,Balanced Accuracy,0.39157200406718295,0.9789300101679573
+Amherst,Sky,Random Forest,Iterative SSL,2026,Macro-F1,0.3909593768193106,0.9773984420482764
+Amherst,Sky,Random Forest,One-shot SSL,42,Balanced Accuracy,0.39340374651255483,0.9835093662813871
+Amherst,Sky,Random Forest,One-shot SSL,42,Macro-F1,0.3929082847986369,0.9822707119965921
+Amherst,Sky,Random Forest,One-shot SSL,123,Balanced Accuracy,0.3927083321235605,0.9817708303089012
+Amherst,Sky,Random Forest,One-shot SSL,123,Macro-F1,0.3918671816482004,0.9796679541205009
+Amherst,Sky,Random Forest,One-shot SSL,2026,Balanced Accuracy,0.39143436623006334,0.9785859155751583
+Amherst,Sky,Random Forest,One-shot SSL,2026,Macro-F1,0.39079909829750203,0.9769977457437551
+Amherst,Sky,Random Forest,Supervised,42,Balanced Accuracy,0.39347752535317304,0.9836938133829326
+Amherst,Sky,Random Forest,Supervised,42,Macro-F1,0.39293815004350274,0.9823453751087569
+Amherst,Sky,Random Forest,Supervised,123,Balanced Accuracy,0.3930855859303857,0.9827139648259642
+Amherst,Sky,Random Forest,Supervised,123,Macro-F1,0.3923517365031677,0.9808793412579192
+Amherst,Sky,Random Forest,Supervised,2026,Balanced Accuracy,0.3916007893291289,0.9790019733228222
+Amherst,Sky,Random Forest,Supervised,2026,Macro-F1,0.390976234237094,0.977440585592735
+Amherst,Sky,SVM (RBF),Autoencoder SSL,42,Balanced Accuracy,0.3771942255855374,0.9429855639638435
+Amherst,Sky,SVM (RBF),Autoencoder SSL,42,Macro-F1,0.378113965293248,0.9452849132331199
+Amherst,Sky,SVM (RBF),Autoencoder SSL,123,Balanced Accuracy,0.37562470587855756,0.9390617646963939
+Amherst,Sky,SVM (RBF),Autoencoder SSL,123,Macro-F1,0.37642384110909566,0.9410596027727391
+Amherst,Sky,SVM (RBF),Autoencoder SSL,2026,Balanced Accuracy,0.378206493415463,0.9455162335386574
+Amherst,Sky,SVM (RBF),Autoencoder SSL,2026,Macro-F1,0.3779848667699864,0.9449621669249659
+Amherst,Sky,SVM (RBF),Iterative SSL,42,Balanced Accuracy,0.37925706573333795,0.9481426643333448
+Amherst,Sky,SVM (RBF),Iterative SSL,42,Macro-F1,0.38021399619347807,0.9505349904836952
+Amherst,Sky,SVM (RBF),Iterative SSL,123,Balanced Accuracy,0.37295039227434656,0.9323759806858664
+Amherst,Sky,SVM (RBF),Iterative SSL,123,Macro-F1,0.37386798311676095,0.9346699577919023
+Amherst,Sky,SVM (RBF),Iterative SSL,2026,Balanced Accuracy,0.3784789979033536,0.946197494758384
+Amherst,Sky,SVM (RBF),Iterative SSL,2026,Macro-F1,0.378541217029678,0.9463530425741951
+Amherst,Sky,SVM (RBF),One-shot SSL,42,Balanced Accuracy,0.38030766297986557,0.9507691574496638
+Amherst,Sky,SVM (RBF),One-shot SSL,42,Macro-F1,0.3810297392294984,0.952574348073746
+Amherst,Sky,SVM (RBF),One-shot SSL,123,Balanced Accuracy,0.3727073801423044,0.9317684503557611
+Amherst,Sky,SVM (RBF),One-shot SSL,123,Macro-F1,0.3736614145610452,0.9341535364026129
+Amherst,Sky,SVM (RBF),One-shot SSL,2026,Balanced Accuracy,0.3792419401999747,0.9481048504999368
+Amherst,Sky,SVM (RBF),One-shot SSL,2026,Macro-F1,0.37917482199196245,0.9479370549799061
+Amherst,Sky,SVM (RBF),Supervised,42,Balanced Accuracy,0.38011866654583604,0.9502966663645901
+Amherst,Sky,SVM (RBF),Supervised,42,Macro-F1,0.38090168854732254,0.9522542213683063
+Amherst,Sky,SVM (RBF),Supervised,123,Balanced Accuracy,0.3737070460983579,0.9342676152458947
+Amherst,Sky,SVM (RBF),Supervised,123,Macro-F1,0.3745897687948706,0.9364744219871765
+Amherst,Sky,SVM (RBF),Supervised,2026,Balanced Accuracy,0.37926806836081794,0.9481701709020448
+Amherst,Sky,SVM (RBF),Supervised,2026,Macro-F1,0.37911148459660293,0.9477787114915073
+Amherst,Sky,XGBoost,Autoencoder SSL,42,Balanced Accuracy,0.3944761014871847,0.9861902537179618
+Amherst,Sky,XGBoost,Autoencoder SSL,42,Macro-F1,0.39408538269726634,0.9852134567431658
+Amherst,Sky,XGBoost,Autoencoder SSL,123,Balanced Accuracy,0.39306422354138787,0.9826605588534696
+Amherst,Sky,XGBoost,Autoencoder SSL,123,Macro-F1,0.3928256938852672,0.9820642347131681
+Amherst,Sky,XGBoost,Autoencoder SSL,2026,Balanced Accuracy,0.39226019325278155,0.9806504831319538
+Amherst,Sky,XGBoost,Autoencoder SSL,2026,Macro-F1,0.39202117849380913,0.9800529462345228
+Amherst,Sky,XGBoost,Iterative SSL,42,Balanced Accuracy,0.3948251560020424,0.9870628900051059
+Amherst,Sky,XGBoost,Iterative SSL,42,Macro-F1,0.39442047147796866,0.9860511786949216
+Amherst,Sky,XGBoost,Iterative SSL,123,Balanced Accuracy,0.39345018624636374,0.9836254656159094
+Amherst,Sky,XGBoost,Iterative SSL,123,Macro-F1,0.3929541740682723,0.9823854351706808
+Amherst,Sky,XGBoost,Iterative SSL,2026,Balanced Accuracy,0.3922089112014995,0.9805222780037487
+Amherst,Sky,XGBoost,Iterative SSL,2026,Macro-F1,0.39197657519567863,0.9799414379891965
+Amherst,Sky,XGBoost,One-shot SSL,42,Balanced Accuracy,0.3948554639647527,0.9871386599118817
+Amherst,Sky,XGBoost,One-shot SSL,42,Macro-F1,0.39443269227387334,0.9860817306846833
+Amherst,Sky,XGBoost,One-shot SSL,123,Balanced Accuracy,0.3934525691322864,0.9836314228307159
+Amherst,Sky,XGBoost,One-shot SSL,123,Macro-F1,0.3929941701406302,0.9824854253515755
+Amherst,Sky,XGBoost,One-shot SSL,2026,Balanced Accuracy,0.3922701130968983,0.9806752827422457
+Amherst,Sky,XGBoost,One-shot SSL,2026,Macro-F1,0.3919471420928239,0.9798678552320597
+Amherst,Sky,XGBoost,Supervised,42,Balanced Accuracy,0.3946613900040796,0.9866534750101991
+Amherst,Sky,XGBoost,Supervised,42,Macro-F1,0.39439969122558227,0.9859992280639557
+Amherst,Sky,XGBoost,Supervised,123,Balanced Accuracy,0.39312628562194485,0.9828157140548621
+Amherst,Sky,XGBoost,Supervised,123,Macro-F1,0.3927332367475359,0.9818330918688397
+Amherst,Sky,XGBoost,Supervised,2026,Balanced Accuracy,0.3919033275645498,0.9797583189113745
+Amherst,Sky,XGBoost,Supervised,2026,Macro-F1,0.3916071199261091,0.9790177998152727
+Davis,Generation,Logistic Regression,Autoencoder SSL,42,Balanced Accuracy,0.3709742030865687,0.9274355077164217
+Davis,Generation,Logistic Regression,Autoencoder SSL,42,Macro-F1,0.3716123360823389,0.9290308402058473
+Davis,Generation,Logistic Regression,Autoencoder SSL,123,Balanced Accuracy,0.37469490042059184,0.9367372510514795
+Davis,Generation,Logistic Regression,Autoencoder SSL,123,Macro-F1,0.37466344158398834,0.9366586039599708
+Davis,Generation,Logistic Regression,Autoencoder SSL,2026,Balanced Accuracy,0.37468899956883417,0.9367224989220854
+Davis,Generation,Logistic Regression,Autoencoder SSL,2026,Macro-F1,0.3751568283609185,0.9378920709022962
+Davis,Generation,Logistic Regression,Iterative SSL,42,Balanced Accuracy,0.37194980992304,0.9298745248075999
+Davis,Generation,Logistic Regression,Iterative SSL,42,Macro-F1,0.37239280843825284,0.9309820210956321
+Davis,Generation,Logistic Regression,Iterative SSL,123,Balanced Accuracy,0.374611570594998,0.936528926487495
+Davis,Generation,Logistic Regression,Iterative SSL,123,Macro-F1,0.3744250158710446,0.9360625396776114
+Davis,Generation,Logistic Regression,Iterative SSL,2026,Balanced Accuracy,0.37479689926953,0.936992248173825
+Davis,Generation,Logistic Regression,Iterative SSL,2026,Macro-F1,0.3748752121141057,0.9371880302852642
+Davis,Generation,Logistic Regression,One-shot SSL,42,Balanced Accuracy,0.37053574186988575,0.9263393546747143
+Davis,Generation,Logistic Regression,One-shot SSL,42,Macro-F1,0.37074799999325514,0.9268699999831378
+Davis,Generation,Logistic Regression,One-shot SSL,123,Balanced Accuracy,0.3704182962119652,0.926045740529913
+Davis,Generation,Logistic Regression,One-shot SSL,123,Macro-F1,0.3699816755290183,0.9249541888225457
+Davis,Generation,Logistic Regression,One-shot SSL,2026,Balanced Accuracy,0.3704367846971114,0.9260919617427784
+Davis,Generation,Logistic Regression,One-shot SSL,2026,Macro-F1,0.3702251890439511,0.9255629726098776
+Davis,Generation,Logistic Regression,Supervised,42,Balanced Accuracy,0.37200711673727443,0.930017791843186
+Davis,Generation,Logistic Regression,Supervised,42,Macro-F1,0.3726159025679998,0.9315397564199995
+Davis,Generation,Logistic Regression,Supervised,123,Balanced Accuracy,0.37601984180209563,0.940049604505239
+Davis,Generation,Logistic Regression,Supervised,123,Macro-F1,0.3759809980169597,0.9399524950423993
+Davis,Generation,Logistic Regression,Supervised,2026,Balanced Accuracy,0.37537260353121593,0.9384315088280398
+Davis,Generation,Logistic Regression,Supervised,2026,Macro-F1,0.37558605814641144,0.9389651453660286
+Davis,Generation,MLP (PyTorch),Autoencoder SSL,42,Balanced Accuracy,0.37338655579789753,0.9334663894947438
+Davis,Generation,MLP (PyTorch),Autoencoder SSL,42,Macro-F1,0.3741701711103048,0.935425427775762
+Davis,Generation,MLP (PyTorch),Autoencoder SSL,123,Balanced Accuracy,0.37548990103007185,0.9387247525751796
+Davis,Generation,MLP (PyTorch),Autoencoder SSL,123,Macro-F1,0.37545230979389366,0.9386307744847341
+Davis,Generation,MLP (PyTorch),Autoencoder SSL,2026,Balanced Accuracy,0.37176332999043304,0.9294083249760826
+Davis,Generation,MLP (PyTorch),Autoencoder SSL,2026,Macro-F1,0.37232559288637346,0.9308139822159336
+Davis,Generation,MLP (PyTorch),Iterative SSL,42,Balanced Accuracy,0.3565014624411701,0.8912536561029252
+Davis,Generation,MLP (PyTorch),Iterative SSL,42,Macro-F1,0.35528597597774686,0.8882149399443671
+Davis,Generation,MLP (PyTorch),Iterative SSL,123,Balanced Accuracy,0.3782047765632114,0.9455119414080284
+Davis,Generation,MLP (PyTorch),Iterative SSL,123,Macro-F1,0.37850617350397564,0.9462654337599391
+Davis,Generation,MLP (PyTorch),Iterative SSL,2026,Balanced Accuracy,0.37331464108859036,0.9332866027214759
+Davis,Generation,MLP (PyTorch),Iterative SSL,2026,Macro-F1,0.3737839909600896,0.9344599774002239
+Davis,Generation,MLP (PyTorch),One-shot SSL,42,Balanced Accuracy,0.3560815397501122,0.8902038493752804
+Davis,Generation,MLP (PyTorch),One-shot SSL,42,Macro-F1,0.3547952574173421,0.8869881435433552
+Davis,Generation,MLP (PyTorch),One-shot SSL,123,Balanced Accuracy,0.37788297147689437,0.9447074286922359
+Davis,Generation,MLP (PyTorch),One-shot SSL,123,Macro-F1,0.37811148302930275,0.9452787075732568
+Davis,Generation,MLP (PyTorch),One-shot SSL,2026,Balanced Accuracy,0.3708234000529905,0.9270585001324763
+Davis,Generation,MLP (PyTorch),One-shot SSL,2026,Macro-F1,0.3715326597339289,0.9288316493348222
+Davis,Generation,MLP (PyTorch),Supervised,42,Balanced Accuracy,0.35503274135446883,0.887581853386172
+Davis,Generation,MLP (PyTorch),Supervised,42,Macro-F1,0.35388429477703487,0.8847107369425872
+Davis,Generation,MLP (PyTorch),Supervised,123,Balanced Accuracy,0.3768383876015785,0.9420959690039462
+Davis,Generation,MLP (PyTorch),Supervised,123,Macro-F1,0.3769705316411012,0.942426329102753
+Davis,Generation,MLP (PyTorch),Supervised,2026,Balanced Accuracy,0.3677709347695539,0.9194273369238848
+Davis,Generation,MLP (PyTorch),Supervised,2026,Macro-F1,0.3685219016963792,0.921304754240948
+Davis,Generation,Random Forest,Autoencoder SSL,42,Balanced Accuracy,0.37758197865090015,0.9439549466272503
+Davis,Generation,Random Forest,Autoencoder SSL,42,Macro-F1,0.3782349405464868,0.945587351366217
+Davis,Generation,Random Forest,Autoencoder SSL,123,Balanced Accuracy,0.37870070256505206,0.9467517564126301
+Davis,Generation,Random Forest,Autoencoder SSL,123,Macro-F1,0.3786644406873909,0.9466611017184773
+Davis,Generation,Random Forest,Autoencoder SSL,2026,Balanced Accuracy,0.3798078275540996,0.9495195688852489
+Davis,Generation,Random Forest,Autoencoder SSL,2026,Macro-F1,0.3802730912879053,0.9506827282197633
+Davis,Generation,Random Forest,Iterative SSL,42,Balanced Accuracy,0.3792126114304163,0.9480315285760407
+Davis,Generation,Random Forest,Iterative SSL,42,Macro-F1,0.37967042809451734,0.9491760702362934
+Davis,Generation,Random Forest,Iterative SSL,123,Balanced Accuracy,0.3800545261335092,0.950136315333773
+Davis,Generation,Random Forest,Iterative SSL,123,Macro-F1,0.38033620695709236,0.9508405173927309
+Davis,Generation,Random Forest,Iterative SSL,2026,Balanced Accuracy,0.37961197566122684,0.9490299391530671
+Davis,Generation,Random Forest,Iterative SSL,2026,Macro-F1,0.38018278947431094,0.9504569736857773
+Davis,Generation,Random Forest,One-shot SSL,42,Balanced Accuracy,0.37955019921834154,0.9488754980458538
+Davis,Generation,Random Forest,One-shot SSL,42,Macro-F1,0.3800372200591632,0.9500930501479079
+Davis,Generation,Random Forest,One-shot SSL,123,Balanced Accuracy,0.3796591710281196,0.9491479275702989
+Davis,Generation,Random Forest,One-shot SSL,123,Macro-F1,0.37992451660632853,0.9498112915158213
+Davis,Generation,Random Forest,One-shot SSL,2026,Balanced Accuracy,0.3791489445694421,0.9478723614236052
+Davis,Generation,Random Forest,One-shot SSL,2026,Macro-F1,0.379729772542143,0.9493244313553575
+Davis,Generation,Random Forest,Supervised,42,Balanced Accuracy,0.3787959573965175,0.9469898934912937
+Davis,Generation,Random Forest,Supervised,42,Macro-F1,0.37931772626503213,0.9482943156625803
+Davis,Generation,Random Forest,Supervised,123,Balanced Accuracy,0.3801256751907842,0.9503141879769605
+Davis,Generation,Random Forest,Supervised,123,Macro-F1,0.3804188057522213,0.9510470143805533
+Davis,Generation,Random Forest,Supervised,2026,Balanced Accuracy,0.3797870901909639,0.9494677254774098
+Davis,Generation,Random Forest,Supervised,2026,Macro-F1,0.38037495936136345,0.9509373984034086
+Davis,Generation,SVM (RBF),Autoencoder SSL,42,Balanced Accuracy,0.37167805872508564,0.9291951468127141
+Davis,Generation,SVM (RBF),Autoencoder SSL,42,Macro-F1,0.3722356585961048,0.9305891464902619
+Davis,Generation,SVM (RBF),Autoencoder SSL,123,Balanced Accuracy,0.3683911292687186,0.9209778231717964
+Davis,Generation,SVM (RBF),Autoencoder SSL,123,Macro-F1,0.3683729390616977,0.9209323476542443
+Davis,Generation,SVM (RBF),Autoencoder SSL,2026,Balanced Accuracy,0.3717435904933164,0.929358976233291
+Davis,Generation,SVM (RBF),Autoencoder SSL,2026,Macro-F1,0.37210748022184237,0.9302687005546059
+Davis,Generation,SVM (RBF),Iterative SSL,42,Balanced Accuracy,0.37131694994974207,0.9282923748743551
+Davis,Generation,SVM (RBF),Iterative SSL,42,Macro-F1,0.37193208667156186,0.9298302166789046
+Davis,Generation,SVM (RBF),Iterative SSL,123,Balanced Accuracy,0.3725117769285723,0.9312794423214307
+Davis,Generation,SVM (RBF),Iterative SSL,123,Macro-F1,0.37247868516630567,0.9311967129157641
+Davis,Generation,SVM (RBF),Iterative SSL,2026,Balanced Accuracy,0.3726365808263135,0.9315914520657838
+Davis,Generation,SVM (RBF),Iterative SSL,2026,Macro-F1,0.3729278272772383,0.9323195681930957
+Davis,Generation,SVM (RBF),One-shot SSL,42,Balanced Accuracy,0.37086896109130363,0.9271724027282591
+Davis,Generation,SVM (RBF),One-shot SSL,42,Macro-F1,0.3715012458207294,0.9287531145518235
+Davis,Generation,SVM (RBF),One-shot SSL,123,Balanced Accuracy,0.3723744328214258,0.9309360820535645
+Davis,Generation,SVM (RBF),One-shot SSL,123,Macro-F1,0.3723925763378234,0.9309814408445585
+Davis,Generation,SVM (RBF),One-shot SSL,2026,Balanced Accuracy,0.3717844258134693,0.9294610645336733
+Davis,Generation,SVM (RBF),One-shot SSL,2026,Macro-F1,0.372132411425058,0.9303310285626449
+Davis,Generation,SVM (RBF),Supervised,42,Balanced Accuracy,0.3715980731079621,0.9289951827699052
+Davis,Generation,SVM (RBF),Supervised,42,Macro-F1,0.37221649685319314,0.9305412421329828
+Davis,Generation,SVM (RBF),Supervised,123,Balanced Accuracy,0.3729635960095433,0.9324089900238582
+Davis,Generation,SVM (RBF),Supervised,123,Macro-F1,0.3730491444665608,0.9326228611664019
+Davis,Generation,SVM (RBF),Supervised,2026,Balanced Accuracy,0.37176642105295177,0.9294160526323794
+Davis,Generation,SVM (RBF),Supervised,2026,Macro-F1,0.3722307179807892,0.930576794951973
+Davis,Generation,XGBoost,Autoencoder SSL,42,Balanced Accuracy,0.38072106956323193,0.9518026739080798
+Davis,Generation,XGBoost,Autoencoder SSL,42,Macro-F1,0.38123202649197796,0.9530800662299449
+Davis,Generation,XGBoost,Autoencoder SSL,123,Balanced Accuracy,0.3815593839683454,0.9538984599208634
+Davis,Generation,XGBoost,Autoencoder SSL,123,Macro-F1,0.3815484737967924,0.9538711844919809
+Davis,Generation,XGBoost,Autoencoder SSL,2026,Balanced Accuracy,0.38101044155097097,0.9525261038774274
+Davis,Generation,XGBoost,Autoencoder SSL,2026,Macro-F1,0.38142722950367963,0.953568073759199
+Davis,Generation,XGBoost,Iterative SSL,42,Balanced Accuracy,0.38071923082093173,0.9517980770523293
+Davis,Generation,XGBoost,Iterative SSL,42,Macro-F1,0.3811219943021592,0.952804985755398
+Davis,Generation,XGBoost,Iterative SSL,123,Balanced Accuracy,0.3822312647220806,0.9555781618052014
+Davis,Generation,XGBoost,Iterative SSL,123,Macro-F1,0.38242462025705726,0.9560615506426431
+Davis,Generation,XGBoost,Iterative SSL,2026,Balanced Accuracy,0.38119985719166877,0.9529996429791718
+Davis,Generation,XGBoost,Iterative SSL,2026,Macro-F1,0.3816965074010825,0.9542412685027063
+Davis,Generation,XGBoost,One-shot SSL,42,Balanced Accuracy,0.38033286501332275,0.9508321625333068
+Davis,Generation,XGBoost,One-shot SSL,42,Macro-F1,0.38078332506340073,0.9519583126585018
+Davis,Generation,XGBoost,One-shot SSL,123,Balanced Accuracy,0.382639261099019,0.9565981527475476
+Davis,Generation,XGBoost,One-shot SSL,123,Macro-F1,0.3828381026114466,0.9570952565286164
+Davis,Generation,XGBoost,One-shot SSL,2026,Balanced Accuracy,0.38121362224808847,0.9530340556202211
+Davis,Generation,XGBoost,One-shot SSL,2026,Macro-F1,0.3816666613490114,0.9541666533725285
+Davis,Generation,XGBoost,Supervised,42,Balanced Accuracy,0.3803766883714791,0.9509417209286977
+Davis,Generation,XGBoost,Supervised,42,Macro-F1,0.3808013553882448,0.9520033884706119
+Davis,Generation,XGBoost,Supervised,123,Balanced Accuracy,0.38287050861764094,0.9571762715441023
+Davis,Generation,XGBoost,Supervised,123,Macro-F1,0.3830209391926995,0.9575523479817488
+Davis,Generation,XGBoost,Supervised,2026,Balanced Accuracy,0.3813113565362203,0.9532783913405507
+Davis,Generation,XGBoost,Supervised,2026,Macro-F1,0.3817916418894044,0.9544791047235109
+Davis,Sky,Logistic Regression,Autoencoder SSL,42,Balanced Accuracy,0.3924590204541655,0.9811475511354136
+Davis,Sky,Logistic Regression,Autoencoder SSL,42,Macro-F1,0.388548304845696,0.97137076211424
+Davis,Sky,Logistic Regression,Autoencoder SSL,123,Balanced Accuracy,0.38881771696642303,0.9720442924160575
+Davis,Sky,Logistic Regression,Autoencoder SSL,123,Macro-F1,0.3878254038938748,0.969563509734687
+Davis,Sky,Logistic Regression,Autoencoder SSL,2026,Balanced Accuracy,0.39091791051964875,0.9772947762991219
+Davis,Sky,Logistic Regression,Autoencoder SSL,2026,Macro-F1,0.38525667466973446,0.9631416866743361
+Davis,Sky,Logistic Regression,Iterative SSL,42,Balanced Accuracy,0.3911209435874571,0.9778023589686426
+Davis,Sky,Logistic Regression,Iterative SSL,42,Macro-F1,0.38749969665744266,0.9687492416436067
+Davis,Sky,Logistic Regression,Iterative SSL,123,Balanced Accuracy,0.39028069346136884,0.975701733653422
+Davis,Sky,Logistic Regression,Iterative SSL,123,Macro-F1,0.3904279415407191,0.9760698538517977
+Davis,Sky,Logistic Regression,Iterative SSL,2026,Balanced Accuracy,0.390865522824212,0.97716380706053
+Davis,Sky,Logistic Regression,Iterative SSL,2026,Macro-F1,0.38634902546404803,0.9658725636601201
+Davis,Sky,Logistic Regression,One-shot SSL,42,Balanced Accuracy,0.3914949939690934,0.9787374849227334
+Davis,Sky,Logistic Regression,One-shot SSL,42,Macro-F1,0.3864524118950492,0.966131029737623
+Davis,Sky,Logistic Regression,One-shot SSL,123,Balanced Accuracy,0.38967364813771244,0.974184120344281
+Davis,Sky,Logistic Regression,One-shot SSL,123,Macro-F1,0.3890456744751138,0.9726141861877844
+Davis,Sky,Logistic Regression,One-shot SSL,2026,Balanced Accuracy,0.3903017878730957,0.9757544696827393
+Davis,Sky,Logistic Regression,One-shot SSL,2026,Macro-F1,0.3845882004923267,0.9614705012308168
+Davis,Sky,Logistic Regression,Supervised,42,Balanced Accuracy,0.39161878924991755,0.9790469731247938
+Davis,Sky,Logistic Regression,Supervised,42,Macro-F1,0.38737584998360264,0.9684396249590066
+Davis,Sky,Logistic Regression,Supervised,123,Balanced Accuracy,0.39058668542337105,0.9764667135584276
+Davis,Sky,Logistic Regression,Supervised,123,Macro-F1,0.3902811402632015,0.9757028506580037
+Davis,Sky,Logistic Regression,Supervised,2026,Balanced Accuracy,0.3904569246023145,0.9761423115057862
+Davis,Sky,Logistic Regression,Supervised,2026,Macro-F1,0.385455743482961,0.9636393587074025
+Davis,Sky,MLP (PyTorch),Autoencoder SSL,42,Balanced Accuracy,0.3815831766260913,0.9539579415652283
+Davis,Sky,MLP (PyTorch),Autoencoder SSL,42,Macro-F1,0.37697208619332995,0.9424302154833248
+Davis,Sky,MLP (PyTorch),Autoencoder SSL,123,Balanced Accuracy,0.3761337811960942,0.9403344529902354
+Davis,Sky,MLP (PyTorch),Autoencoder SSL,123,Macro-F1,0.37179343295970335,0.9294835823992583
+Davis,Sky,MLP (PyTorch),Autoencoder SSL,2026,Balanced Accuracy,0.3793956673801921,0.9484891684504801
+Davis,Sky,MLP (PyTorch),Autoencoder SSL,2026,Macro-F1,0.36941950431355297,0.9235487607838824
+Davis,Sky,MLP (PyTorch),Iterative SSL,42,Balanced Accuracy,0.3874395739627219,0.9685989349068047
+Davis,Sky,MLP (PyTorch),Iterative SSL,42,Macro-F1,0.3831435231756446,0.9578588079391115
+Davis,Sky,MLP (PyTorch),Iterative SSL,123,Balanced Accuracy,0.3836053416699522,0.9590133541748804
+Davis,Sky,MLP (PyTorch),Iterative SSL,123,Macro-F1,0.3817705636662277,0.9544264091655692
+Davis,Sky,MLP (PyTorch),Iterative SSL,2026,Balanced Accuracy,0.3869087217299103,0.9672718043247758
+Davis,Sky,MLP (PyTorch),Iterative SSL,2026,Macro-F1,0.37950449597638436,0.9487612399409608
+Davis,Sky,MLP (PyTorch),One-shot SSL,42,Balanced Accuracy,0.38676214799356246,0.9669053699839061
+Davis,Sky,MLP (PyTorch),One-shot SSL,42,Macro-F1,0.38323829520887753,0.9580957380221938
+Davis,Sky,MLP (PyTorch),One-shot SSL,123,Balanced Accuracy,0.3848692328810669,0.9621730822026672
+Davis,Sky,MLP (PyTorch),One-shot SSL,123,Macro-F1,0.3835562901016402,0.9588907252541005
+Davis,Sky,MLP (PyTorch),One-shot SSL,2026,Balanced Accuracy,0.38580796946634216,0.9645199236658554
+Davis,Sky,MLP (PyTorch),One-shot SSL,2026,Macro-F1,0.37928984660376563,0.948224616509414
+Davis,Sky,MLP (PyTorch),Supervised,42,Balanced Accuracy,0.38550380432202347,0.9637595108050586
+Davis,Sky,MLP (PyTorch),Supervised,42,Macro-F1,0.38128069706089507,0.9532017426522377
+Davis,Sky,MLP (PyTorch),Supervised,123,Balanced Accuracy,0.3852113328750808,0.963028332187702
+Davis,Sky,MLP (PyTorch),Supervised,123,Macro-F1,0.3811879869078948,0.9529699672697369
+Davis,Sky,MLP (PyTorch),Supervised,2026,Balanced Accuracy,0.3819015193893819,0.9547537984734547
+Davis,Sky,MLP (PyTorch),Supervised,2026,Macro-F1,0.3729002829520998,0.9322507073802495
+Davis,Sky,Random Forest,Autoencoder SSL,42,Balanced Accuracy,0.39227390292889447,0.9806847573222361
+Davis,Sky,Random Forest,Autoencoder SSL,42,Macro-F1,0.3923501047186003,0.9808752617965008
+Davis,Sky,Random Forest,Autoencoder SSL,123,Balanced Accuracy,0.3928534702999352,0.982133675749838
+Davis,Sky,Random Forest,Autoencoder SSL,123,Macro-F1,0.392681026933267,0.9817025673331675
+Davis,Sky,Random Forest,Autoencoder SSL,2026,Balanced Accuracy,0.3922095359883083,0.9805238399707707
+Davis,Sky,Random Forest,Autoencoder SSL,2026,Macro-F1,0.39131933212301345,0.9782983303075335
+Davis,Sky,Random Forest,Iterative SSL,42,Balanced Accuracy,0.39237590024956187,0.9809397506239046
+Davis,Sky,Random Forest,Iterative SSL,42,Macro-F1,0.3924389786204089,0.9810974465510222
+Davis,Sky,Random Forest,Iterative SSL,123,Balanced Accuracy,0.3936868036332686,0.9842170090831714
+Davis,Sky,Random Forest,Iterative SSL,123,Macro-F1,0.39342064409955846,0.9835516102488961
+Davis,Sky,Random Forest,Iterative SSL,2026,Balanced Accuracy,0.39239648033126295,0.9809912008281574
+Davis,Sky,Random Forest,Iterative SSL,2026,Macro-F1,0.39200534999824,0.9800133749955999
+Davis,Sky,Random Forest,One-shot SSL,42,Balanced Accuracy,0.3927841940018454,0.9819604850046134
+Davis,Sky,Random Forest,One-shot SSL,42,Macro-F1,0.3928515232860563,0.9821288082151408
+Davis,Sky,Random Forest,One-shot SSL,123,Balanced Accuracy,0.3939589994681243,0.9848974986703107
+Davis,Sky,Random Forest,One-shot SSL,123,Macro-F1,0.3936125130828449,0.9840312827071122
+Davis,Sky,Random Forest,One-shot SSL,2026,Balanced Accuracy,0.39328096455973693,0.9832024113993423
+Davis,Sky,Random Forest,One-shot SSL,2026,Macro-F1,0.3927007558691435,0.9817518896728586
+Davis,Sky,Random Forest,Supervised,42,Balanced Accuracy,0.3927671437034652,0.981917859258663
+Davis,Sky,Random Forest,Supervised,42,Macro-F1,0.3927848611995698,0.9819621529989244
+Davis,Sky,Random Forest,Supervised,123,Balanced Accuracy,0.3933467110745059,0.9833667776862648
+Davis,Sky,Random Forest,Supervised,123,Macro-F1,0.3931090597209844,0.982772649302461
+Davis,Sky,Random Forest,Supervised,2026,Balanced Accuracy,0.3931448666423091,0.9828621666057726
+Davis,Sky,Random Forest,Supervised,2026,Macro-F1,0.3925633819611587,0.9814084549028967
+Davis,Sky,SVM (RBF),Autoencoder SSL,42,Balanced Accuracy,0.37498676847304874,0.9374669211826218
+Davis,Sky,SVM (RBF),Autoencoder SSL,42,Macro-F1,0.37758074615389825,0.9439518653847456
+Davis,Sky,SVM (RBF),Autoencoder SSL,123,Balanced Accuracy,0.37352288889026497,0.9338072222256624
+Davis,Sky,SVM (RBF),Autoencoder SSL,123,Macro-F1,0.3742939410833115,0.9357348527082787
+Davis,Sky,SVM (RBF),Autoencoder SSL,2026,Balanced Accuracy,0.38049798155567804,0.951244953889195
+Davis,Sky,SVM (RBF),Autoencoder SSL,2026,Macro-F1,0.37504343538886575,0.9376085884721643
+Davis,Sky,SVM (RBF),Iterative SSL,42,Balanced Accuracy,0.3750410122290134,0.9376025305725335
+Davis,Sky,SVM (RBF),Iterative SSL,42,Macro-F1,0.37736848366806663,0.9434212091701666
+Davis,Sky,SVM (RBF),Iterative SSL,123,Balanced Accuracy,0.3752680416308012,0.938170104077003
+Davis,Sky,SVM (RBF),Iterative SSL,123,Macro-F1,0.37658509780595295,0.9414627445148823
+Davis,Sky,SVM (RBF),Iterative SSL,2026,Balanced Accuracy,0.3813913521684773,0.9534783804211933
+Davis,Sky,SVM (RBF),Iterative SSL,2026,Macro-F1,0.37783292525370654,0.9445823131342663
+Davis,Sky,SVM (RBF),One-shot SSL,42,Balanced Accuracy,0.37677281647122124,0.9419320411780531
+Davis,Sky,SVM (RBF),One-shot SSL,42,Macro-F1,0.3780406064476374,0.9451015161190934
+Davis,Sky,SVM (RBF),One-shot SSL,123,Balanced Accuracy,0.37520122001146317,0.9380030500286579
+Davis,Sky,SVM (RBF),One-shot SSL,123,Macro-F1,0.3758169596029435,0.9395423990073587
+Davis,Sky,SVM (RBF),One-shot SSL,2026,Balanced Accuracy,0.3808587969700285,0.9521469924250712
+Davis,Sky,SVM (RBF),One-shot SSL,2026,Macro-F1,0.37686206986396587,0.9421551746599146
+Davis,Sky,SVM (RBF),Supervised,42,Balanced Accuracy,0.3772539163049155,0.9431347907622887
+Davis,Sky,SVM (RBF),Supervised,42,Macro-F1,0.3783361159926383,0.9458402899815956
+Davis,Sky,SVM (RBF),Supervised,123,Balanced Accuracy,0.37569553589060284,0.939238839726507
+Davis,Sky,SVM (RBF),Supervised,123,Macro-F1,0.3757971659835938,0.9394929149589845
+Davis,Sky,SVM (RBF),Supervised,2026,Balanced Accuracy,0.3822240765625827,0.9555601914064568
+Davis,Sky,SVM (RBF),Supervised,2026,Macro-F1,0.3778360726878688,0.9445901817196719
+Davis,Sky,XGBoost,Autoencoder SSL,42,Balanced Accuracy,0.3934487083951734,0.9836217709879334
+Davis,Sky,XGBoost,Autoencoder SSL,42,Macro-F1,0.39328298178239596,0.9832074544559899
+Davis,Sky,XGBoost,Autoencoder SSL,123,Balanced Accuracy,0.3928381040453519,0.9820952601133798
+Davis,Sky,XGBoost,Autoencoder SSL,123,Macro-F1,0.3934647265780369,0.9836618164450922
+Davis,Sky,XGBoost,Autoencoder SSL,2026,Balanced Accuracy,0.3951689806357326,0.9879224515893315
+Davis,Sky,XGBoost,Autoencoder SSL,2026,Macro-F1,0.3944905000334716,0.9862262500836789
+Davis,Sky,XGBoost,Iterative SSL,42,Balanced Accuracy,0.3941462482806928,0.985365620701732
+Davis,Sky,XGBoost,Iterative SSL,42,Macro-F1,0.39436410223871154,0.9859102555967788
+Davis,Sky,XGBoost,Iterative SSL,123,Balanced Accuracy,0.39428342130268956,0.9857085532567239
+Davis,Sky,XGBoost,Iterative SSL,123,Macro-F1,0.3940625931142675,0.9851564827856687
+Davis,Sky,XGBoost,Iterative SSL,2026,Balanced Accuracy,0.39428311683307565,0.9857077920826891
+Davis,Sky,XGBoost,Iterative SSL,2026,Macro-F1,0.393758034367621,0.9843950859190526
+Davis,Sky,XGBoost,One-shot SSL,42,Balanced Accuracy,0.39312566613479094,0.9828141653369773
+Davis,Sky,XGBoost,One-shot SSL,42,Macro-F1,0.3934532684530918,0.9836331711327295
+Davis,Sky,XGBoost,One-shot SSL,123,Balanced Accuracy,0.39231278043027584,0.9807819510756896
+Davis,Sky,XGBoost,One-shot SSL,123,Macro-F1,0.392735976871113,0.9818399421777825
+Davis,Sky,XGBoost,One-shot SSL,2026,Balanced Accuracy,0.39444840598976016,0.9861210149744004
+Davis,Sky,XGBoost,One-shot SSL,2026,Macro-F1,0.3938817973787664,0.9847044934469159
+Davis,Sky,XGBoost,Supervised,42,Balanced Accuracy,0.39349985929031406,0.9837496482257851
+Davis,Sky,XGBoost,Supervised,42,Macro-F1,0.39381489637202405,0.9845372409300601
+Davis,Sky,XGBoost,Supervised,123,Balanced Accuracy,0.3942496251755431,0.9856240629388576
+Davis,Sky,XGBoost,Supervised,123,Macro-F1,0.39441212673257564,0.986030316831439
+Davis,Sky,XGBoost,Supervised,2026,Balanced Accuracy,0.39574716843259045,0.9893679210814761
+Davis,Sky,XGBoost,Supervised,2026,Macro-F1,0.39493898305752206,0.9873474576438052

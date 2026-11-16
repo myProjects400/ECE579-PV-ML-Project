@@ -1,0 +1,145 @@
+City,Task,Method,Model,Labeled Percentage,Seed,Class,Support,Recall
+Davis,Sky,Supervised,XGBoost,10,42,Overcast,177,0.9887005649717514
+Davis,Sky,Supervised,XGBoost,10,42,Partly Cloudy,280,0.9428571428571428
+Davis,Sky,Supervised,XGBoost,10,42,Clear,1955,0.9959079283887468
+Davis,Sky,Supervised,XGBoost,10,123,Overcast,177,0.9943502824858758
+Davis,Sky,Supervised,XGBoost,10,123,Partly Cloudy,280,0.9428571428571428
+Davis,Sky,Supervised,XGBoost,10,123,Clear,1955,0.9979539641943734
+Davis,Sky,Supervised,XGBoost,10,2026,Overcast,177,1.0
+Davis,Sky,Supervised,XGBoost,10,2026,Partly Cloudy,280,0.9535714285714286
+Davis,Sky,Supervised,XGBoost,10,2026,Clear,1955,0.9964194373401535
+Davis,Sky,One-shot SSL,XGBoost,10,42,Overcast,177,0.9887005649717514
+Davis,Sky,One-shot SSL,XGBoost,10,42,Partly Cloudy,280,0.9392857142857143
+Davis,Sky,One-shot SSL,XGBoost,10,42,Clear,1955,0.9953964194373401
+Davis,Sky,One-shot SSL,XGBoost,10,123,Overcast,177,0.9830508474576272
+Davis,Sky,One-shot SSL,XGBoost,10,123,Partly Cloudy,280,0.9464285714285714
+Davis,Sky,One-shot SSL,XGBoost,10,123,Clear,1955,0.9969309462915601
+Davis,Sky,One-shot SSL,XGBoost,10,2026,Overcast,177,0.9943502824858758
+Davis,Sky,One-shot SSL,XGBoost,10,2026,Partly Cloudy,280,0.95
+Davis,Sky,One-shot SSL,XGBoost,10,2026,Clear,1955,0.9959079283887468
+Davis,Sky,Iterative SSL,XGBoost,10,42,Overcast,177,0.9887005649717514
+Davis,Sky,Iterative SSL,XGBoost,10,42,Partly Cloudy,280,0.9392857142857143
+Davis,Sky,Iterative SSL,XGBoost,10,42,Clear,1955,0.9969309462915601
+Davis,Sky,Iterative SSL,XGBoost,10,123,Overcast,177,0.9943502824858758
+Davis,Sky,Iterative SSL,XGBoost,10,123,Partly Cloudy,280,0.9357142857142857
+Davis,Sky,Iterative SSL,XGBoost,10,123,Clear,1955,0.9979539641943734
+Davis,Sky,Iterative SSL,XGBoost,10,2026,Overcast,177,0.9943502824858758
+Davis,Sky,Iterative SSL,XGBoost,10,2026,Partly Cloudy,280,0.9535714285714286
+Davis,Sky,Iterative SSL,XGBoost,10,2026,Clear,1955,0.9943734015345268
+Davis,Sky,Autoencoder SSL,XGBoost,10,42,Overcast,177,0.9887005649717514
+Davis,Sky,Autoencoder SSL,XGBoost,10,42,Partly Cloudy,280,0.9428571428571428
+Davis,Sky,Autoencoder SSL,XGBoost,10,42,Clear,1955,0.9948849104859335
+Davis,Sky,Autoencoder SSL,XGBoost,10,123,Overcast,177,0.9943502824858758
+Davis,Sky,Autoencoder SSL,XGBoost,10,123,Partly Cloudy,280,0.9392857142857143
+Davis,Sky,Autoencoder SSL,XGBoost,10,123,Clear,1955,0.9979539641943734
+Davis,Sky,Autoencoder SSL,XGBoost,10,2026,Overcast,177,1.0
+Davis,Sky,Autoencoder SSL,XGBoost,10,2026,Partly Cloudy,280,0.9535714285714286
+Davis,Sky,Autoencoder SSL,XGBoost,10,2026,Clear,1955,0.9959079283887468
+Davis,Generation,Supervised,XGBoost,10,42,Low,745,0.9570469798657718
+Davis,Generation,Supervised,XGBoost,10,42,Medium,730,0.8972602739726028
+Davis,Generation,Supervised,XGBoost,10,42,High,937,0.9850586979722519
+Davis,Generation,Supervised,XGBoost,10,123,Low,745,0.9570469798657718
+Davis,Generation,Supervised,XGBoost,10,123,Medium,730,0.9123287671232877
+Davis,Generation,Supervised,XGBoost,10,123,High,937,0.9765208110992529
+Davis,Generation,Supervised,XGBoost,10,2026,Low,745,0.9610738255033557
+Davis,Generation,Supervised,XGBoost,10,2026,Medium,730,0.8904109589041096
+Davis,Generation,Supervised,XGBoost,10,2026,High,937,0.9797225186766275
+Davis,Generation,One-shot SSL,XGBoost,10,42,Low,745,0.9530201342281879
+Davis,Generation,One-shot SSL,XGBoost,10,42,Medium,730,0.9
+Davis,Generation,One-shot SSL,XGBoost,10,42,High,937,0.9850586979722519
+Davis,Generation,One-shot SSL,XGBoost,10,123,Low,745,0.9543624161073826
+Davis,Generation,One-shot SSL,XGBoost,10,123,Medium,730,0.9178082191780822
+Davis,Generation,One-shot SSL,XGBoost,10,123,High,937,0.9786552828175027
+Davis,Generation,One-shot SSL,XGBoost,10,2026,Low,745,0.9624161073825503
+Davis,Generation,One-shot SSL,XGBoost,10,2026,Medium,730,0.8931506849315068
+Davis,Generation,One-shot SSL,XGBoost,10,2026,High,937,0.9797225186766275
+Davis,Generation,Iterative SSL,XGBoost,10,42,Low,745,0.9583892617449664
+Davis,Generation,Iterative SSL,XGBoost,10,42,Medium,730,0.8945205479452055
+Davis,Generation,Iterative SSL,XGBoost,10,42,High,937,0.983991462113127
+Davis,Generation,Iterative SSL,XGBoost,10,123,Low,745,0.9570469798657718
+Davis,Generation,Iterative SSL,XGBoost,10,123,Medium,730,0.9136986301369863
+Davis,Generation,Iterative SSL,XGBoost,10,123,High,937,0.9797225186766275
+Davis,Generation,Iterative SSL,XGBoost,10,2026,Low,745,0.963758389261745
+Davis,Generation,Iterative SSL,XGBoost,10,2026,Medium,730,0.8863013698630137
+Davis,Generation,Iterative SSL,XGBoost,10,2026,High,937,0.9829242262540021
+Davis,Generation,Autoencoder SSL,XGBoost,10,42,Low,745,0.9570469798657718
+Davis,Generation,Autoencoder SSL,XGBoost,10,42,Medium,730,0.8904109589041096
+Davis,Generation,Autoencoder SSL,XGBoost,10,42,High,937,0.983991462113127
+Davis,Generation,Autoencoder SSL,XGBoost,10,123,Low,745,0.9543624161073826
+Davis,Generation,Autoencoder SSL,XGBoost,10,123,Medium,730,0.9205479452054794
+Davis,Generation,Autoencoder SSL,XGBoost,10,123,High,937,0.9647812166488794
+Davis,Generation,Autoencoder SSL,XGBoost,10,2026,Low,745,0.9610738255033557
+Davis,Generation,Autoencoder SSL,XGBoost,10,2026,Medium,730,0.8863013698630137
+Davis,Generation,Autoencoder SSL,XGBoost,10,2026,High,937,0.9765208110992529
+Amherst,Sky,Supervised,XGBoost,10,42,Overcast,604,0.9900662251655629
+Amherst,Sky,Supervised,XGBoost,10,42,Partly Cloudy,650,0.9661538461538461
+Amherst,Sky,Supervised,XGBoost,10,42,Clear,1158,0.9905008635578584
+Amherst,Sky,Supervised,XGBoost,10,123,Overcast,604,0.9950331125827815
+Amherst,Sky,Supervised,XGBoost,10,123,Partly Cloudy,650,0.963076923076923
+Amherst,Sky,Supervised,XGBoost,10,123,Clear,1158,0.9853195164075993
+Amherst,Sky,Supervised,XGBoost,10,2026,Overcast,604,1.0
+Amherst,Sky,Supervised,XGBoost,10,2026,Partly Cloudy,650,0.9184615384615384
+Amherst,Sky,Supervised,XGBoost,10,2026,Clear,1158,0.9922279792746114
+Amherst,Sky,One-shot SSL,XGBoost,10,42,Overcast,604,0.9933774834437086
+Amherst,Sky,One-shot SSL,XGBoost,10,42,Partly Cloudy,650,0.9676923076923077
+Amherst,Sky,One-shot SSL,XGBoost,10,42,Clear,1158,0.9905008635578584
+Amherst,Sky,One-shot SSL,XGBoost,10,123,Overcast,604,0.9933774834437086
+Amherst,Sky,One-shot SSL,XGBoost,10,123,Partly Cloudy,650,0.963076923076923
+Amherst,Sky,One-shot SSL,XGBoost,10,123,Clear,1158,0.9835924006908463
+Amherst,Sky,One-shot SSL,XGBoost,10,2026,Overcast,604,1.0
+Amherst,Sky,One-shot SSL,XGBoost,10,2026,Partly Cloudy,650,0.9292307692307692
+Amherst,Sky,One-shot SSL,XGBoost,10,2026,Clear,1158,0.9887737478411054
+Amherst,Sky,Iterative SSL,XGBoost,10,42,Overcast,604,0.9900662251655629
+Amherst,Sky,Iterative SSL,XGBoost,10,42,Partly Cloudy,650,0.9707692307692307
+Amherst,Sky,Iterative SSL,XGBoost,10,42,Clear,1158,0.9896373056994818
+Amherst,Sky,Iterative SSL,XGBoost,10,123,Overcast,604,0.9950331125827815
+Amherst,Sky,Iterative SSL,XGBoost,10,123,Partly Cloudy,650,0.9584615384615385
+Amherst,Sky,Iterative SSL,XGBoost,10,123,Clear,1158,0.9853195164075993
+Amherst,Sky,Iterative SSL,XGBoost,10,2026,Overcast,604,1.0
+Amherst,Sky,Iterative SSL,XGBoost,10,2026,Partly Cloudy,650,0.92
+Amherst,Sky,Iterative SSL,XGBoost,10,2026,Clear,1158,0.9922279792746114
+Amherst,Sky,Autoencoder SSL,XGBoost,10,42,Overcast,604,0.9900662251655629
+Amherst,Sky,Autoencoder SSL,XGBoost,10,42,Partly Cloudy,650,0.9692307692307692
+Amherst,Sky,Autoencoder SSL,XGBoost,10,42,Clear,1158,0.9853195164075993
+Amherst,Sky,Autoencoder SSL,XGBoost,10,123,Overcast,604,0.9966887417218543
+Amherst,Sky,Autoencoder SSL,XGBoost,10,123,Partly Cloudy,650,0.9584615384615385
+Amherst,Sky,Autoencoder SSL,XGBoost,10,123,Clear,1158,0.9853195164075993
+Amherst,Sky,Autoencoder SSL,XGBoost,10,2026,Overcast,604,1.0
+Amherst,Sky,Autoencoder SSL,XGBoost,10,2026,Partly Cloudy,650,0.9276923076923077
+Amherst,Sky,Autoencoder SSL,XGBoost,10,2026,Clear,1158,0.9905008635578584
+Amherst,Generation,Supervised,XGBoost,10,42,Low,658,0.7401215805471124
+Amherst,Generation,Supervised,XGBoost,10,42,Medium,919,0.5973884657236126
+Amherst,Generation,Supervised,XGBoost,10,42,High,831,0.9049338146811071
+Amherst,Generation,Supervised,XGBoost,10,123,Low,658,0.6990881458966566
+Amherst,Generation,Supervised,XGBoost,10,123,Medium,919,0.6343852013057671
+Amherst,Generation,Supervised,XGBoost,10,123,High,831,0.8856799037304453
+Amherst,Generation,Supervised,XGBoost,10,2026,Low,658,0.7629179331306991
+Amherst,Generation,Supervised,XGBoost,10,2026,Medium,919,0.5473340587595212
+Amherst,Generation,Supervised,XGBoost,10,2026,High,831,0.8965102286401926
+Amherst,Generation,One-shot SSL,XGBoost,10,42,Low,658,0.7492401215805471
+Amherst,Generation,One-shot SSL,XGBoost,10,42,Medium,919,0.5952121871599565
+Amherst,Generation,One-shot SSL,XGBoost,10,42,High,831,0.8941034897713598
+Amherst,Generation,One-shot SSL,XGBoost,10,123,Low,658,0.6869300911854104
+Amherst,Generation,One-shot SSL,XGBoost,10,123,Medium,919,0.6267682263329706
+Amherst,Generation,One-shot SSL,XGBoost,10,123,High,831,0.8856799037304453
+Amherst,Generation,One-shot SSL,XGBoost,10,2026,Low,658,0.7689969604863222
+Amherst,Generation,One-shot SSL,XGBoost,10,2026,Medium,919,0.5527747551686616
+Amherst,Generation,One-shot SSL,XGBoost,10,2026,High,831,0.9001203369434416
+Amherst,Generation,Iterative SSL,XGBoost,10,42,Low,658,0.7416413373860182
+Amherst,Generation,Iterative SSL,XGBoost,10,42,Medium,919,0.6158868335146899
+Amherst,Generation,Iterative SSL,XGBoost,10,42,High,831,0.8941034897713598
+Amherst,Generation,Iterative SSL,XGBoost,10,123,Low,658,0.6747720364741642
+Amherst,Generation,Iterative SSL,XGBoost,10,123,Medium,919,0.6539717083786725
+Amherst,Generation,Iterative SSL,XGBoost,10,123,High,831,0.8820697954271961
+Amherst,Generation,Iterative SSL,XGBoost,10,2026,Low,658,0.7644376899696048
+Amherst,Generation,Iterative SSL,XGBoost,10,2026,Medium,919,0.5701849836779108
+Amherst,Generation,Iterative SSL,XGBoost,10,2026,High,831,0.8929001203369434
+Amherst,Generation,Autoencoder SSL,XGBoost,10,42,Low,658,0.743161094224924
+Amherst,Generation,Autoencoder SSL,XGBoost,10,42,Medium,919,0.5680087051142546
+Amherst,Generation,Autoencoder SSL,XGBoost,10,42,High,831,0.9061371841155235
+Amherst,Generation,Autoencoder SSL,XGBoost,10,123,Low,658,0.7218844984802432
+Amherst,Generation,Autoencoder SSL,XGBoost,10,123,Medium,919,0.6256800870511425
+Amherst,Generation,Autoencoder SSL,XGBoost,10,123,High,831,0.8736462093862816
+Amherst,Generation,Autoencoder SSL,XGBoost,10,2026,Low,658,0.7933130699088146
+Amherst,Generation,Autoencoder SSL,XGBoost,10,2026,Medium,919,0.528835690968444
+Amherst,Generation,Autoencoder SSL,XGBoost,10,2026,High,831,0.8880866425992779

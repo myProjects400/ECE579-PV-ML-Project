@@ -1,0 +1,16 @@
+\begin{table}[!htbp]\centering\footnotesize
+\setlength{\tabcolsep}{5pt}
+\caption{P5 model and method inventory, separating classical machine learning and deep learning.}\label{tab:p5methods}
+\begin{tabular}{@{}p{0.19\linewidth}p{0.37\linewidth}p{0.34\linewidth}@{}}\toprule
+\textbf{Family / stage} & \textbf{Models or strategies} & \textbf{Purpose}\\\midrule
+\rowcolor{gold!10}
+Classical ML & Ridge, random forest, XGBoost & Target-only and transfer baselines\\
+\rowcolor{gold!10}
+Classical transfer & Affine calibration; joint pooling & Adapt predictions/source-target data\\
+\rowcolor{teal!9}
+Deep learning & PyTorch MLP & Neural target/source regression\\
+\rowcolor{teal!9}
+Neural transfer & Frozen encoder + ridge; partial fine-tuning & Transfer neural representations\\
+\bottomrule\end{tabular}
+\end{table}
+

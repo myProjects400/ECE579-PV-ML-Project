@@ -1,0 +1,17 @@
+\begin{tikzpicture}[x=1cm,y=1cm]
+\node[flowdark,minimum width=5.9cm,minimum height=1.1cm] (source) at (-3.5,0) {\textbf{Source domain}\\Davis, six-year training history};
+\node[flowdark,minimum width=5.9cm,minimum height=1.1cm] (target) at (3.5,0) {\textbf{Target domain}\\Amherst; $k=10,50,100$ labels};
+\node[flow,minimum width=5.9cm] (train) at (-3.5,-1.55) {Source-trained models and zero-shot baseline};
+\node[flow,minimum width=5.9cm] (few) at (3.5,-1.55) {Target-only models using $k$ labels};
+\draw[arr](source)--(train);\draw[arr](target)--(few);
+\node[flowgold,minimum width=4.0cm,minimum height=1.4cm] (cal) at (-4.62,-3.55) {\textbf{Calibrated transfer}\\Affine alignment and\\source--target pooling};
+\node[flowgold,minimum width=4.0cm,minimum height=1.4cm] (neural) at (0,-3.55) {\textbf{Neural transfer}\\Frozen encoder + ridge;\\Partial fine-tuning};
+\node[flowsoft,minimum width=4.0cm,minimum height=1.4cm] (baselines) at (4.62,-3.55) {\textbf{Comparison baselines}\\Source-only / target-only\\using the same budget};
+\draw[conn](train.south)--(-3.5,-2.45)--(3.5,-2.45)--(few.south);
+\draw[conn](-4.62,-2.45)--(4.62,-2.45);
+\foreach \n in {cal,neural,baselines}{\draw[arr](\n.north |- 0,-2.45)--(\n.north);}
+\node[flowdark,minimum width=8.5cm] (eval) at (0,-5.50) {Held-out Amherst test: RMSE, MAE, nRMSE and matched transfer gain};
+\draw[conn](-4.62,-4.34)--(-4.62,-4.7)--(4.62,-4.7)--(4.62,-4.34);
+\foreach \n in {cal,neural,baselines}{\draw[conn](\n.south)--(\n.south |- 0,-4.7);}
+\draw[arr](0,-4.7)--(eval.north);
+\end{tikzpicture}

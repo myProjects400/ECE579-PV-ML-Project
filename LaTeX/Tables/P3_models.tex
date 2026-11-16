@@ -1,0 +1,18 @@
+\begin{table}[!htbp]\centering\footnotesize
+\setlength{\tabcolsep}{5pt}
+\caption{P3 model and method inventory, separating classical machine learning and deep learning.}\label{tab:p3methods}
+\begin{tabular}{@{}p{0.19\linewidth}p{0.37\linewidth}p{0.34\linewidth}@{}}\toprule
+\textbf{Family / stage} & \textbf{Models or strategies} & \textbf{Purpose}\\\midrule
+\rowcolor{gold!10}
+Classical / unsupervised & PCA; approximate RBF kernel PCA & Fit predictors without labels\\
+\rowcolor{teal!9}
+Deep / unsupervised & PyTorch autoencoder & Learn reconstruction bottlenecks\\
+\rowcolor{gold!10}
+Classical / downstream & Logistic/Ridge, SVM/SVR, RF, XGBoost & Evaluate learned features\\
+\rowcolor{teal!9}
+Deep / downstream & PyTorch MLP & Classification and regression\\
+\rowcolor{mist}
+Visualization only & t-SNE, UMAP & 2D class-colored projections\\
+\bottomrule\end{tabular}
+\end{table}
+

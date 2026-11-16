@@ -1,0 +1,16 @@
+\begin{tikzpicture}[x=1cm,y=1cm]
+\node[flowdark,minimum width=7.8cm] (data) at (0,0) {Solar weather features $\to$ continuous Output Power (kW)};
+\node[flow,minimum width=7.8cm] (prep) at (0,-1.15) {Chronological splits; training-only preprocessing};
+\node[flowgold,minimum width=3.3cm,minimum height=1.25cm] (a) at (-5.35,-3.0) {\textbf{Same-city}\\Davis / Amherst};
+\node[flowgold,minimum width=3.3cm,minimum height=1.25cm] (b) at (-1.78,-3.0) {\textbf{Cross-city zero-shot}\\Davis $\to$ other cities};
+\node[flowgold,minimum width=3.3cm,minimum height=1.25cm] (c) at (1.78,-3.0) {\textbf{History ablation}\\Three vs six years};
+\node[flowgold,minimum width=3.3cm,minimum height=1.25cm] (d) at (5.35,-3.0) {\textbf{Sequential forecast}\\12-step history};
+\draw[conn](prep.south)--(0,-1.88);\draw[conn](-5.35,-1.88)--(5.35,-1.88);
+\foreach \n in {a,b,c,d}{\draw[arr](\n.north |- 0,-1.88)--(\n.north);}
+\node[flow,minimum width=9cm] (models) at (0,-4.85) {\textbf{Regression models:} Ridge | SVR | Random forest | XGBoost | MLP\\LSTM evaluated for sequential forecasting};
+\draw[conn](-5.35,-3.79)--(-5.35,-4.1)--(5.35,-4.1)--(5.35,-3.79);
+\foreach \n in {a,b,c,d}{\draw[conn](\n.south)--(\n.south |- 0,-4.1);}
+\draw[arr](0,-4.1)--(models.north);
+\node[flowdark,minimum width=9cm] (eval) at (0,-6.2) {Held-out RMSE, MAE, nRMSE; model comparisons and prediction traces};
+\draw[arr](models)--(eval);
+\end{tikzpicture}
