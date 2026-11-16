@@ -17,7 +17,7 @@ This project uses a five-city solar irradiance and PV-output dataset (Davis, Hur
 
 - **Report:** [`Report/Report.pdf`](Report/Report.pdf) (LaTeX source in [`LaTeX/main.tex`](LaTeX/main.tex))
 - **Slides:** [`Slides/Slides.pdf`](Slides/Slides.pdf) (LaTeX source in [`LaTeX/ppt.tex`](LaTeX/ppt.tex))
-- **Video presentation:** [Google Drive](https://drive.google.com/file/d/1yEQ6FFIMTAmYXIgzWIxX5eqDjJoTPSaY/view?usp=sharing)
+- **Video presentation:** [Google Drive](https://drive.google.com/file/d/1yEQ6FFIMTAmYXIgzWIxX5eqDjJoTPSaY/view?usp=sharing), or download the MP4 from the [v1.0 release](https://github.com/myProjects400/ECE579-PV-ML-Project/releases/download/v1.0/Video.Explanation.mp4) (backup copy)
 - **Final metrics:** [`results.csv`](results.csv) / [`results.json`](results.json) (headline results); full per-seed metrics in [`Code_base_v2/Results/`](Code_base_v2/Results)
 - **Figures:** [`Code_base_v2/Figures/`](Code_base_v2/Figures)
 
